@@ -1,0 +1,16 @@
+.button {
+  font-size: 1rem;
+  line-height: 16px;
+  padding: 16px;
+  width: 100%;
+  background: var(--bs-primary);
+  @include border-radius(8px);
+  color: var(--bs-white);
+  border: 1px solid var(--bs-primary);
+  font-weight: 700;
+  &.secondary_btn {
+    border: 1px solid var(--bs-secondary);
+    background: var(--bs-white);
+    color: var(--bs-primary);
+  }
+}

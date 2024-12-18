@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background: var(--bs-purple);
+  font-size: 1rem;
+  font-family: 'Arial';
+}
+.input_field {
+  font-size: 0.875rem;
+  line-height: 16px;
+  padding: 13px 12px;
+  background: var(--bs-disabled);
+  @include border-radius(8px);
+  color: var(--bs-black);
+}
+.custom_form_lbl {
+  font-size: 1rem;
+  color: var(--bs-black);
+  font-weight: normal;
+}
+.font700 {
+  font-weight: 700;
+}

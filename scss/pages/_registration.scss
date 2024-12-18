@@ -1,0 +1,78 @@
+.registration_pg {
+  background: var(--bs-white);
+  @include border-radius(40px);
+  @include medium-screen {
+    max-width: 592px;
+    margin: 30px auto;
+    height: 100%;
+  }
+  .text_readonly {
+    color: var(--bs-gray);
+  }
+  .registration_top {
+    padding: 24px 0 90px 0;
+  }
+  .back_txt {
+    color: var(--bs-black);
+    font-size: 0.875rem;
+    gap: 12px;
+    line-height: 16px;
+  }
+  .registration_panel {
+    padding: 0 50px;
+    .registration_container {
+      .title {
+        font-size: 1.5rem;
+        line-height: 31px;
+        font-weight: bold;
+        padding-bottom: 38px;
+      }
+      .pwd-cls {
+        background: url('../../images/eye-off.png') no-repeat right
+          var(--bs-disabled);
+        background-position: 97%;
+      }
+      .form-check-label {
+        font-size: 0.875rem;
+        line-height: 18px;
+      }
+      .reg_warp {
+        margin-bottom: 38px;
+      }
+      .continue_btn {
+        gap: 16px;
+      }
+      .btn_panel {
+        padding: 0 28px;
+      }
+      .divider_or {
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          border-top: 1px solid gray;
+          width: 100%;
+        }
+      }
+      .or_lbl {
+        left: 46%;
+        top: 12px;
+        background: var(--bs-white);
+        z-index: 1;
+        padding: 0 12px;
+      }
+      .already_section {
+        .already_lbl {
+          padding: 37px 0 66px 0;
+          font-size: 1rem;
+          color: var(--bs-black);
+          line-height: 18px;
+          margin-bottom: 0;
+        }
+        .logintxt {
+          color: var(--bs-primary);
+        }
+      }
+    }
+  }
+}

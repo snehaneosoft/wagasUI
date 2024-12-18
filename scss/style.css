@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: var(--bs-purple);
+  font-size: 1rem;
+  font-family: "Arial";
+}
+
+.input_field {
+  font-size: 0.875rem;
+  line-height: 16px;
+  padding: 13px 12px;
+  background: var(--bs-disabled);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  color: var(--bs-black);
+}
+
+.custom_form_lbl {
+  font-size: 1rem;
+  color: var(--bs-black);
+  font-weight: normal;
+}
+
+.font700 {
+  font-weight: 700;
+}
+
+.button {
+  font-size: 1rem;
+  line-height: 16px;
+  padding: 16px;
+  width: 100%;
+  background: var(--bs-primary);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  color: var(--bs-white);
+  border: 1px solid var(--bs-primary);
+  font-weight: 700;
+}
+.button.secondary_btn {
+  border: 1px solid var(--bs-secondary);
+  background: var(--bs-white);
+  color: var(--bs-primary);
+}
+
+.registration_pg {
+  background: var(--bs-white);
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+}
+@media (min-width: 768px) {
+  .registration_pg {
+    max-width: 592px;
+    margin: 30px auto;
+    height: 100%;
+  }
+}
+.registration_pg .text_readonly {
+  color: var(--bs-gray);
+}
+.registration_pg .registration_top {
+  padding: 24px 0 90px 0;
+}
+.registration_pg .back_txt {
+  color: var(--bs-black);
+  font-size: 0.875rem;
+  gap: 12px;
+  line-height: 16px;
+}
+.registration_pg .registration_panel {
+  padding: 0 50px;
+}
+.registration_pg .registration_panel .registration_container .title {
+  font-size: 1.5rem;
+  line-height: 31px;
+  font-weight: bold;
+  padding-bottom: 38px;
+}
+.registration_pg .registration_panel .registration_container .pwd-cls {
+  background: url("../../images/eye-off.png") no-repeat right var(--bs-disabled);
+  background-position: 97%;
+}
+.registration_pg .registration_panel .registration_container .form-check-label {
+  font-size: 0.875rem;
+  line-height: 18px;
+}
+.registration_pg .registration_panel .registration_container .reg_warp {
+  margin-bottom: 38px;
+}
+.registration_pg .registration_panel .registration_container .continue_btn {
+  gap: 16px;
+}
+.registration_pg .registration_panel .registration_container .btn_panel {
+  padding: 0 28px;
+}
+.registration_pg .registration_panel .registration_container .divider_or {
+  position: relative;
+}
+.registration_pg .registration_panel .registration_container .divider_or::after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid gray;
+  width: 100%;
+}
+.registration_pg .registration_panel .registration_container .or_lbl {
+  left: 46%;
+  top: 12px;
+  background: var(--bs-white);
+  z-index: 1;
+  padding: 0 12px;
+}
+.registration_pg .registration_panel .registration_container .already_section .already_lbl {
+  padding: 37px 0 66px 0;
+  font-size: 1rem;
+  color: var(--bs-black);
+  line-height: 18px;
+  margin-bottom: 0;
+}
+.registration_pg .registration_panel .registration_container .already_section .logintxt {
+  color: var(--bs-primary);
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../../fonts/Arial-BoldMT.woff2") format("woff2"), url("../../fonts/Arial-BoldMT.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../../fonts/ArialMT.woff2") format("woff2"), url("../../fonts/ArialMT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../../fonts/ArialCEMTBlack-Regular.woff2") format("woff2"), url("../../fonts/ArialCEMTBlack-Regular.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../../fonts/Arial-Lgt.woff2") format("woff2"), url("../../fonts/Arial-Lgt.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../../fonts/Arial-Mdm.woff2") format("woff2"), url("../../fonts/Arial-Mdm.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --bs-purple: #d5d3eb;
+  --bs-white: #fff;
+  --bs-gray: #a6a6a6;
+  --bs-black: #1f242a;
+  --bs-primary: #4e2a8c;
+  --bs-secondary: #3a127f;
+  --bs-disabled: #f1f4f9;
+}/*# sourceMappingURL=style.css.map */
