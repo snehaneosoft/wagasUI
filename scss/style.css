@@ -85,7 +85,7 @@ body {
   font-size: 1.5rem;
   line-height: 31px;
   font-weight: bold;
-  padding-bottom: 38px;
+  margin-bottom: 38px;
 }
 .registration_pg .registration_panel .registration_container .pwd-cls {
   background: url("../../images/eye-off.png") no-repeat right var(--bs-disabled);
@@ -129,6 +129,22 @@ body {
 }
 .registration_pg .registration_panel .registration_container .already_section .logintxt {
   color: var(--bs-primary);
+}
+.registration_pg .registration_panel .registration_container .already_section .chk_your_mail_already {
+  padding: 76px 0 66px 0;
+}
+.registration_pg .registration_panel .registration_container .reg_subtitle {
+  font-size: 1rem;
+  line-height: 20px;
+  margin-bottom: 38px;
+}
+.registration_pg .registration_panel .registration_container .chk_your_mail .form-control {
+  width: 47px;
+  height: 65px;
+  text-align: center;
+}
+.registration_pg .registration_panel .registration_container .chk_your_mail .chk_your_mail_container {
+  gap: 12px;
 }
 
 @font-face {
