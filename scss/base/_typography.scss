@@ -1,58 +1,42 @@
-// @font-face {
-//   font-family: 'Arial';
-//   src: url('../../fonts/ArialMT.woff2') format('woff2'),
-//     url('../../fonts/ArialMT.woff') format('woff');
-//   font-weight: normal;
-//   font-style: normal;
-//   font-display: swap;
-// }
-// @font-face {
-//   font-family: 'Arial';
-//   src: url('../../fonts/ArialGEOBold.woff2') format('woff2'),
-//     url('../../fonts/ArialGEOBold.woff') format('woff');
-//   font-weight: bold;
-//   font-style: normal;
-//   font-display: swap;
-// }
 @font-face {
-  font-family: 'Arial';
-  src: url('../../fonts/Arial-BoldMT.woff2') format('woff2'),
-    url('../../fonts/Arial-BoldMT.woff') format('woff');
+  font-family: 'Inter';
+  src: url('../../fonts/InterBold.woff2') format('woff2'),
+    url('../../fonts/InterBold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Arial';
-  src: url('../../fonts/ArialMT.woff2') format('woff2'),
-    url('../../fonts/ArialMT.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Arial';
-  src: url('../../fonts/ArialCEMTBlack-Regular.woff2') format('woff2'),
-    url('../../fonts/ArialCEMTBlack-Regular.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Arial';
-  src: url('../../fonts/Arial-Lgt.woff2') format('woff2'),
-    url('../../fonts/Arial-Lgt.woff') format('woff');
+  font-family: 'Inter';
+  src: url('../../fonts/InterLight.woff2') format('woff2'),
+    url('../../fonts/InterLight.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Inter';
+  src: url('../../fonts/InterMedium.woff2') format('woff2'),
+    url('../../fonts/InterMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
-  font-family: 'Arial';
-  src: url('../../fonts/Arial-Mdm.woff2') format('woff2'),
-    url('../../fonts/Arial-Mdm.woff') format('woff');
-  font-weight: 500;
+  font-family: 'Inter';
+  src: url('../../fonts/InterRegular.woff2') format('woff2'),
+    url('../../fonts/InterRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../fonts/InterSemiBold.woff2') format('woff2'),
+    url('../../fonts/InterSemiBold.woff') format('woff');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }

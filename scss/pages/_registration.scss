@@ -1,3 +1,12 @@
+.registartion_title_h4 {
+  font-size: 1.8rem;
+  padding: 40px 0 0 0;
+  text-align: center;
+  @include medium-screen {
+    max-width: 592px;
+    margin: 0 auto;
+  }
+}
 .registration_pg {
   background: var(--bs-white);
   @include border-radius(40px);
@@ -10,7 +19,7 @@
     color: var(--bs-gray);
   }
   .registration_top {
-    padding: 24px 0 90px 0;
+    padding: 24px 0 66px 0;
   }
   .back_txt {
     color: var(--bs-black);
@@ -24,7 +33,7 @@
       .title {
         font-size: 1.5rem;
         line-height: 31px;
-        font-weight: bold;
+        font-weight: 700;
         margin-bottom: 38px;
       }
       .pwd-cls {
@@ -32,18 +41,52 @@
           var(--bs-disabled);
         background-position: 97%;
       }
+      .eye_cls {
+        top: 10px;
+        right: 15px;
+      }
+      .pwdlock {
+        background: url(../../images/lock.png) var(--bs-disabled) no-repeat left;
+        background-position: 2% 50%;
+        padding-left: 35px;
+      }
       .form-check-label {
         font-size: 0.875rem;
         line-height: 18px;
       }
       .reg_warp {
         margin-bottom: 38px;
+        .forget_pwd_lbl {
+          font-size: 0.875rem;
+          color: var(--bs-black);
+          line-height: 16px;
+        }
       }
       .continue_btn {
         gap: 16px;
       }
       .btn_panel {
         padding: 0 28px;
+        .createpwd_list_ul {
+          margin-bottom: 57px;
+          li {
+            list-style-type: none;
+            font-size: 0.75rem;
+            line-height: 14px;
+            color: var(--bs-gray);
+            padding-bottom: 6px;
+            position: relative;
+            padding-left: 10px;
+            &::before {
+              content: '';
+              position: absolute;
+              background: url('../../images/check.png') no-repeat;
+              left: -17px;
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
       }
       .divider_or {
         position: relative;
@@ -90,6 +133,16 @@
         }
         .chk_your_mail_container {
           gap: 12px;
+        }
+      }
+      &.create_new_pwd {
+        .btn_panel {
+          padding-bottom: 66px;
+        }
+      }
+      &.forgotpwd {
+        .btn_panel {
+          padding: 28px 28px 70px 28px;
         }
       }
     }

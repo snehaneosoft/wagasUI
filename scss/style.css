@@ -10,7 +10,7 @@ html {
 body {
   background: var(--bs-purple);
   font-size: 1rem;
-  font-family: "Arial";
+  font-family: "Inter";
 }
 
 .input_field {
@@ -27,7 +27,7 @@ body {
 .custom_form_lbl {
   font-size: 1rem;
   color: var(--bs-black);
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .font700 {
@@ -53,6 +53,18 @@ body {
   color: var(--bs-primary);
 }
 
+.registartion_title_h4 {
+  font-size: 1.8rem;
+  padding: 40px 0 0 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .registartion_title_h4 {
+    max-width: 592px;
+    margin: 0 auto;
+  }
+}
+
 .registration_pg {
   background: var(--bs-white);
   border-radius: 40px;
@@ -70,7 +82,7 @@ body {
   color: var(--bs-gray);
 }
 .registration_pg .registration_top {
-  padding: 24px 0 90px 0;
+  padding: 24px 0 66px 0;
 }
 .registration_pg .back_txt {
   color: var(--bs-black);
@@ -84,12 +96,21 @@ body {
 .registration_pg .registration_panel .registration_container .title {
   font-size: 1.5rem;
   line-height: 31px;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 38px;
 }
 .registration_pg .registration_panel .registration_container .pwd-cls {
   background: url("../../images/eye-off.png") no-repeat right var(--bs-disabled);
   background-position: 97%;
+}
+.registration_pg .registration_panel .registration_container .eye_cls {
+  top: 10px;
+  right: 15px;
+}
+.registration_pg .registration_panel .registration_container .pwdlock {
+  background: url(../../images/lock.png) var(--bs-disabled) no-repeat left;
+  background-position: 2% 50%;
+  padding-left: 35px;
 }
 .registration_pg .registration_panel .registration_container .form-check-label {
   font-size: 0.875rem;
@@ -98,11 +119,36 @@ body {
 .registration_pg .registration_panel .registration_container .reg_warp {
   margin-bottom: 38px;
 }
+.registration_pg .registration_panel .registration_container .reg_warp .forget_pwd_lbl {
+  font-size: 0.875rem;
+  color: var(--bs-black);
+  line-height: 16px;
+}
 .registration_pg .registration_panel .registration_container .continue_btn {
   gap: 16px;
 }
 .registration_pg .registration_panel .registration_container .btn_panel {
   padding: 0 28px;
+}
+.registration_pg .registration_panel .registration_container .btn_panel .createpwd_list_ul {
+  margin-bottom: 57px;
+}
+.registration_pg .registration_panel .registration_container .btn_panel .createpwd_list_ul li {
+  list-style-type: none;
+  font-size: 0.75rem;
+  line-height: 14px;
+  color: var(--bs-gray);
+  padding-bottom: 6px;
+  position: relative;
+  padding-left: 10px;
+}
+.registration_pg .registration_panel .registration_container .btn_panel .createpwd_list_ul li::before {
+  content: "";
+  position: absolute;
+  background: url("../../images/check.png") no-repeat;
+  left: -17px;
+  width: 16px;
+  height: 16px;
 }
 .registration_pg .registration_panel .registration_container .divider_or {
   position: relative;
@@ -146,39 +192,45 @@ body {
 .registration_pg .registration_panel .registration_container .chk_your_mail .chk_your_mail_container {
   gap: 12px;
 }
+.registration_pg .registration_panel .registration_container.create_new_pwd .btn_panel {
+  padding-bottom: 66px;
+}
+.registration_pg .registration_panel .registration_container.forgotpwd .btn_panel {
+  padding: 28px 28px 70px 28px;
+}
 
 @font-face {
-  font-family: "Arial";
-  src: url("../../fonts/Arial-BoldMT.woff2") format("woff2"), url("../../fonts/Arial-BoldMT.woff") format("woff");
+  font-family: "Inter";
+  src: url("../../fonts/InterBold.woff2") format("woff2"), url("../../fonts/InterBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Arial";
-  src: url("../../fonts/ArialMT.woff2") format("woff2"), url("../../fonts/ArialMT.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Arial";
-  src: url("../../fonts/ArialCEMTBlack-Regular.woff2") format("woff2"), url("../../fonts/ArialCEMTBlack-Regular.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Arial";
-  src: url("../../fonts/Arial-Lgt.woff2") format("woff2"), url("../../fonts/Arial-Lgt.woff") format("woff");
+  font-family: "Inter";
+  src: url("../../fonts/InterLight.woff2") format("woff2"), url("../../fonts/InterLight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Arial";
-  src: url("../../fonts/Arial-Mdm.woff2") format("woff2"), url("../../fonts/Arial-Mdm.woff") format("woff");
+  font-family: "Inter";
+  src: url("../../fonts/InterMedium.woff2") format("woff2"), url("../../fonts/InterMedium.woff") format("woff");
   font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/InterRegular.woff2") format("woff2"), url("../../fonts/InterRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/InterSemiBold.woff2") format("woff2"), url("../../fonts/InterSemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
