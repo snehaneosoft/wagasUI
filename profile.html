@@ -223,8 +223,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                     <div class="card">
@@ -266,7 +264,7 @@
                                             Cryptography</span>
                                         <div class="edit_box">
                                             <button type="button" class="btn p-0 border-0" data-bs-toggle="modal"
-                                                data-bs-target="#editvolunteer">
+                                                data-bs-target="#editskill">
                                                 <img src="./images/edit.png" alt="edit">
                                             </button>
                                         </div>
@@ -633,6 +631,100 @@
                     <div class="d-flex justify-content-between w-100 m-0">
                         <div class="remove_btn">
                             <button type="button" class="button rounded_btn h-100 secondary_btn">Remove</button>
+                        </div>
+                        <div class="save_btn">
+                            <button type="button" class="button rounded_btn h-100">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="addskill" tabindex="-1" aria-labelledby="addSkillModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Skill</h5>
+                    <button type="button" data-bs-dismiss="modal" class="p-0 bg-transparent border-0"
+                        aria-label="Close">
+                        <img src="./images/cross.png" alt="close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="experience_survey_container">
+                        <div class="row g-3">
+                            <div class="col-xl-12 xol-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <label for="title" class="form-label">Skill</label>
+                                <input type="text" class="form-control" id="title"
+                                    placeholder="Ex : Project management">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <div class="d-flex justify-content-between w-100 m-0">
+
+                        <div class="save_btn">
+                            <button type="button" class="button rounded_btn h-100">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editskill" tabindex="-1" aria-labelledby="addSkillModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Skill</h5>
+                    <button type="button" data-bs-dismiss="modal" class="p-0 bg-transparent border-0"
+                        aria-label="Close">
+                        <img src="./images/cross.png" alt="close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="experience_survey_container">
+                        <div class="row g-3">
+                            <div class="col-xl-12 xol-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <label for="title" class="form-label">Skill</label>
+                                <input type="text" class="form-control" id="title"
+                                    placeholder="Ex : Project management">
+                            </div>
+                            <div class="col-xl-12 xol-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <label for="title" class="form-label">Company or Organisation where this skill
+                                    applies</label>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Accenture
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Quantum Mountains
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        ONSORGE Ltd
+                                    </label>
+                                </div>
+                                <!-- <input type="text" class="form-control" id="title"
+                                    placeholder="Ex : Project management"> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <div class="d-flex justify-content-between w-100 m-0">
+                        <div class="remove_btn">
+                            <button type="button" class="button rounded_btn h-100 secondary_btn">Remove</button>
+
                         </div>
                         <div class="save_btn">
                             <button type="button" class="button rounded_btn h-100">Save</button>

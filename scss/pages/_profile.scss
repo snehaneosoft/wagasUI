@@ -63,3 +63,15 @@ body {
     }
   }
 }
+.experience_survey_container {
+  .form-check{
+    border: 1px solid var(--bs-light-gray1);
+    padding: 9px 35px;
+    @include border-radius(8px);
+    .form-check-label {
+      font-size: 0.875rem;
+      line-height: 17px;
+      color: var(--bs-black);
+    }
+  }
+}
