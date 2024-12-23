@@ -4,6 +4,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1;
   @include medium-screen {
     .menu {
       ul {
@@ -15,6 +16,10 @@ header {
             padding: 12px 10px;
             gap: 16px;
             font-size: 1rem;
+          }
+          &:hover {
+            background: var(--bs-white);
+            
           }
         }
       }
@@ -71,5 +76,6 @@ header {
   }
   .main_content_right {
     margin-left: 240px;
+    padding: 24px 32px;
   }
 }

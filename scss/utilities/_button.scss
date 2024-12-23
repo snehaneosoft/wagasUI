@@ -13,4 +13,7 @@
     background: var(--bs-white);
     color: var(--bs-primary);
   }
+  &.rounded_btn {
+    @include border-radius(50px);
+  }
 }

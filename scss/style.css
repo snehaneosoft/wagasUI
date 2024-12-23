@@ -46,6 +46,75 @@ body {
   font-weight: bold;
 }
 
+.page_title {
+  font-size: 1.3rem;
+  line-height: 39px;
+  letter-spacing: 0.3px;
+}
+
+.modal .modal-header {
+  border-bottom: none;
+  padding: 32px 32px 24px 32px;
+}
+.modal .modal-header .modal-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 28px;
+}
+.modal .modal-body {
+  padding: 8px 32px 32px 32px;
+}
+.modal .modal-body p {
+  font-size: 1rem;
+  line-height: 19px;
+  margin-bottom: 8px;
+  color: var(--bs-black);
+}
+.modal .modal-body .about_survey_container textarea {
+  resize: none;
+  font-size: 0.875rem;
+}
+.modal .modal-body .about_survey_container textarea:focus {
+  box-shadow: none;
+}
+.modal .modal-body .about_survey_container .charLimit {
+  font-size: 0.875rem;
+  line-height: 17px;
+  letter-spacing: -0.3px;
+  color: var(--bs-light-blue);
+}
+.modal .modal-body .experience_survey_container .form-label {
+  font-size: 0.875rem;
+  line-height: 19px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.modal .modal-body .experience_survey_container .form-control {
+  font-size: 0.875rem;
+  line-height: 17px;
+  letter-spacing: 0.3;
+  padding: 11px 10px;
+  border-color: var(--bs-gray);
+}
+.modal .modal-footer {
+  border-top: none;
+  padding: 8px 32px 32px 32px;
+}
+
+.save_btn {
+  width: 88px;
+}
+.save_btn .button {
+  padding: 12px 16px;
+}
+
+.remove_btn {
+  width: 113px;
+}
+.remove_btn .button {
+  padding: 12px 16px;
+}
+
 .button {
   font-size: 1rem;
   line-height: 16px;
@@ -63,6 +132,11 @@ body {
   border: 1px solid var(--bs-secondary);
   background: var(--bs-white);
   color: var(--bs-primary);
+}
+.button.rounded_btn {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
 }
 
 .registartion_title_h4 {
@@ -215,12 +289,80 @@ body {
   background: var(--bs-disabled);
 }
 
+.content_wrapper {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.content_wrapper .card {
+  background: var(--bs-white);
+  padding: 30px;
+  flex-direction: row;
+  gap: 36px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+}
+.content_wrapper .card .left_logo {
+  width: 100px;
+  height: 100px;
+  background: var(--bs-light-gray);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+}
+.content_wrapper .card .profile_content {
+  width: calc(100% - 136px);
+}
+.content_wrapper .card .profile_content_title {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  line-height: 29px;
+  letter-spacing: 0.3px;
+}
+.content_wrapper .card .profile_content_subtitle {
+  font-size: 1rem;
+  color: var(--bs-black);
+  margin-bottom: 5px;
+}
+.content_wrapper .card .profile_content_info {
+  font-size: 0.875rem;
+  color: var(--bs-black);
+}
+.content_wrapper .card .profile_content .form-select {
+  font-size: 1rem;
+  line-height: 24px;
+  border-color: var(--bs-light-gray1);
+}
+.content_wrapper .card .profile_content .profile_wrap {
+  gap: 15px;
+}
+.content_wrapper .card .profile_content .profile_wrap .analytical_title {
+  font-size: 1.18rem;
+  line-height: 24px;
+}
+.content_wrapper .card .profile_content .profile_wrap .analytical_para {
+  font-size: 1rem;
+  line-height: 22px;
+}
+.content_wrapper .card .profile_content .profile_content_box {
+  gap: 24px;
+  border-bottom: 1px solid var(--bs-light-gray2);
+  margin-bottom: 32px;
+}
+.content_wrapper .card .profile_content .profile_content_box .profile_content_title {
+  font-size: 1.12rem;
+  margin-bottom: 4px;
+  line-height: 24px;
+}
+
 header {
   background: var(--bs-primary);
   padding: 0 16px;
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   header .menu ul {
@@ -234,6 +376,9 @@ header {
     padding: 12px 10px;
     gap: 16px;
     font-size: 1rem;
+  }
+  header .menu ul li:hover {
+    background: var(--bs-white);
   }
   header .rt_menu ul {
     list-style: none;
@@ -288,6 +433,7 @@ header {
 }
 .main_content .main_content_right {
   margin-left: 240px;
+  padding: 24px 32px;
 }
 
 @font-face {
@@ -334,4 +480,8 @@ header {
   --bs-secondary: #3a127f;
   --bs-disabled: #f1f4f9;
   --bs-dark-gray: #979797;
+  --bs-light-gray: #d9d9d9;
+  --bs-light-gray1: #d0d5dd;
+  --bs-light-gray2: #e8e8e8;
+  --bs-light-blue: #6A8295 ;
 }/*# sourceMappingURL=style.css.map */
