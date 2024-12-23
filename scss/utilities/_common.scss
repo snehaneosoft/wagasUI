@@ -108,4 +108,19 @@ body {
 }
 .form-check-input {
   border: 1px solid var(--bs-black);
+
+  &:checked[type='checkbox'] {
+    background-image: url('../../images/checkbox_checked.png') !important;
+    // background-repeat: no-repeat !important;
+    background: url('../../images/checkbox_checked.png') var(--bs-white)
+      no-repeat center !important;
+    border-color: var(--bs-black);
+  }
+  &:focus {
+    box-shadow: none !important;
+    border-color: var(--bs-black);
+  }
+}
+.add_your {
+  margin-top: 40px;
 }

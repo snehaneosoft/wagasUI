@@ -46,15 +46,27 @@
             <div class="rt_menu">
                 <ul class="d-flex align-items-center h-100">
                     <li class="text-white">
-                        <span class="d-flex align-items-center rt_menu_span">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                        <!-- <span class="d-flex align-items-center rt_menu_span">
                             English
                             <img src="./images/downarr.png" alt="arrow">
-                        </span>
+                        </span> -->
                     </li>
                     <li class="text-white">
                         <span class="d-flex align-items-center rt_menu_span">
                             <span class="gray_img_bx"></span>
                             Johnathan
+                            <img src="./images/downarr.png" alt="arrow">
                         </span>
                     </li>
                 </ul>
@@ -66,75 +78,75 @@
             <div class="leftsidebar">
                 <ul>
                     <li>
-                        <a href="" class="text-white text-decoration-none d-flex align-items-center">
+                        <a href="" class=" text-decoration-none d-flex align-items-center">
                             <img src="./images/icons/home.png" alt="overview">
                             <span>Overview</span>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="text-white text-decoration-none d-flex align-items-center">
+                        <a href="" class=" text-decoration-none d-flex align-items-center">
                             <img src="./images/icons/about.png" alt="about">
                             <span>About</span>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="text-white text-decoration-none d-flex align-items-center">
+                        <a href="" class=" text-decoration-none d-flex align-items-center">
                             <img src="./images/icons/experience.png" alt="experience">
                             <span>Experience</span>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="text-white text-decoration-none d-flex align-items-center">
+                        <a href="" class=" text-decoration-none d-flex align-items-center">
                             <img src="./images/icons/edu.png" alt="Education">
                             <span>Education</span>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="text-white text-decoration-none d-flex align-items-center">
+                        <a href="" class=" text-decoration-none d-flex align-items-center">
                             <img src="./images/icons/licence.png" alt="licence">
                             <span>Licence &
                                 Certifications</span>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="text-white text-decoration-none d-flex align-items-center">
+                        <a href="" class=" text-decoration-none d-flex align-items-center">
                             <img src="./images/icons/vulanteer.png" alt="vulanteer">
                             <span>Volunteering</span>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="text-white text-decoration-none d-flex align-items-center">
+                        <a href="" class=" text-decoration-none d-flex align-items-center">
                             <img src="./images/icons/vulanteer.png" alt="skills">
                             <span>Skills</span>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="text-white text-decoration-none d-flex align-items-center">
+                        <a href="" class=" text-decoration-none d-flex align-items-center">
                             <img src="./images/icons/publication.png" alt="publication">
                             <span>Publications </span>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="text-white text-decoration-none d-flex align-items-center">
+                        <a href="" class=" text-decoration-none d-flex align-items-center">
                             <img src="./images/icons/report.png" alt="report">
                             <span>Reports </span>
                         </a>
                     </li>
-                    <li>
-                        <a href="" class="text-white text-decoration-none d-flex align-items-center">
+                    <li class="active">
+                        <a href="" class=" text-decoration-none d-flex align-items-center">
                             <img src="./images/icons/profile.png" alt="profile">
                             <span>Profile </span>
                         </a>
                     </li>
                 </ul>
-                <ul>
+                <!-- <ul>
                     <li>
-                        <a href="" class="text-white text-decoration-none d-flex align-items-center">
+                        <a href="" class=" text-decoration-none d-flex align-items-center">
                             <img src="./images/icons/logout.png" alt="logout">
                             <span>Logout</span>
                         </a>
                     </li>
-                </ul>
+                </ul> -->
 
             </div>
             <div class="main_content_right">
@@ -153,7 +165,7 @@
                             <p class="profile_content_info fontInter">Paris, Île-de-France, France</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <!-- <div class="card">
                         <div class="profile_content w-100">
                             <h4 class="profile_content_title d-flex justify-content-between mb-3">
                                 <span class="font700">Organisation</span>
@@ -171,7 +183,7 @@
                             </p>
                         </div>
 
-                    </div>
+                    </div> -->
                     <div class="card">
                         <div class="profile_content w-100">
                             <h4 class="profile_content_title d-flex justify-content-between mb-3">
@@ -229,50 +241,402 @@
                         <div class="profile_content w-100">
                             <h4 class="profile_content_title d-flex justify-content-between mb-3">
                                 <span class="font700">About</span>
-                                <div class="edit_box">
+                                <!-- <button type="button" class="btn btn-transparent border-0 p-0" data-bs-toggle="modal"
+                                    data-bs-target="#addAbout">
+                                    <img src="./images/plussquare.png" alt="add">
+                                </button> -->
+                                <!-- <div class="edit_box">
                                     <button type="button" class="btn btn-transparent border-0" data-bs-toggle="modal"
-                                        data-bs-target="#editpopup">
+                                        data-bs-target="#editAbout">
+                                        <img src="./images/edit.png" alt="edit">
+                                    </button>
+                                </div> -->
+                            </h4>
+                            <h4 class="profile_content_title d-flex justify-content-between">
+                                <p class="profile_content_subtitle fontInter mb-0">
+                                    Write a brief summary of your professional experience, industry and key skills..</p>
+                                <div class="edit_box">
+                                    <button type="button" class="btn p-0 border-0" data-bs-toggle="modal"
+                                        data-bs-target="#editAbout">
                                         <img src="./images/edit.png" alt="edit">
                                     </button>
                                 </div>
                             </h4>
-                            <p class="profile_content_info fontInter mb-0">Quantum Computing & Cyber Security Specialist
-                                with
-                                expertise in Advanced Science, Deep Learning, and Cryptography. Leading Cyber Security &
-                                Quantum Computing initiatives within the Financial Sector.</p>
+                            <!-- <p class="profile_content_subtitle fontInter mb-0">
+                                Write a brief summary of your professional experience, industry and key skills..</p> -->
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 mt-3">
+                                <button type="button" class="btn button secondary_btn rounded_btn"
+                                    data-bs-toggle="modal" data-bs-target="#addAbout">Add your profile summary</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
                         <!-- <div class="left_logo"></div> -->
-                        <div class="profile_content w-100">
-                            <h4 class="profile_content_title d-flex justify-content-between mb-3">
-                                <span class="font700">Experience</span>
-
-                                <button type="button" class="btn btn-transparent border-0 p-0" data-bs-toggle="modal"
-                                    data-bs-target="#addvolunteer">
+                        <div class="d-flex flex-column w-100">
+                            <div class="profile_content w-100">
+                                <h4 class="profile_content_title d-flex justify-content-between mb-3">
+                                    <span class="font700">Experience</span>
+                                    <!-- <button type="button" class="btn btn-transparent border-0 p-0" data-bs-toggle="modal"
+                                    data-bs-target="#addexperience">
                                     <img src="./images/plussquare.png" alt="add">
-                                </button>
+                                </button> -->
+                                </h4>
+                                <div class="d-flex flex-row profile_content_box">
+                                    <div class="profile_content_exp">
+                                        <img src="./images/designation.png" alt="designation">
+                                    </div>
+                                    <div class="profile_content  w-100">
+                                        <h4 class="profile_content_title d-flex justify-content-between">
+                                            <span class="font700">Designation</span>
+                                            <div class="edit_box">
+                                                <button type="button" class="btn p-0 border-0" data-bs-toggle="modal"
+                                                    data-bs-target="#editexperience">
+                                                    <img src="./images/edit.png" alt="edit">
+                                                </button>
+                                            </div>
+                                        </h4>
+                                        <p class="profile_content_subtitle fontInter font500">Company or Organisation
+                                        </p>
+                                        <p class="profile_content_info fontInter mb-4">Description of your key
+                                            responsibilities, achievements, and the impact you made in your role at the
+                                            company.</p>
+                                    </div>
+                                </div>
 
-                            </h4>
+                            </div>
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 mt-3">
+                                <button type="button" class="btn button secondary_btn rounded_btn"
+                                    data-bs-toggle="modal" data-bs-target="#addAbout">Add your Work Experience
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <!-- <div class="left_logo"></div> -->
+                        <div class="d-flex flex-column w-100">
+                            <div class="profile_content w-100">
+                                <h4 class="profile_content_title d-flex justify-content-between mb-3">
+                                    <span class="font700">Education</span>
+                                    <!-- <button type="button" class="btn btn-transparent border-0 p-0" data-bs-toggle="modal"
+                                    data-bs-target="#addEducation">
+                                    <img src="./images/plussquare.png" alt="add">
+                                </button> -->
+
+                                </h4>
+                                <div class="d-flex flex-row profile_content_box">
+                                    <div class="profile_content_exp">
+                                        <img src="./images/education.png" alt="education">
+                                    </div>
+                                    <div class="profile_content w-100">
+                                        <h4 class="profile_content_title d-flex justify-content-between">
+                                            <span class="font700">Designation</span>
+                                            <div class="edit_box">
+                                                <button type="button" class="btn p-0 border-0" data-bs-toggle="modal"
+                                                    data-bs-target="#editEducation">
+                                                    <img src="./images/edit.png" alt="edit">
+                                                </button>
+                                            </div>
+                                        </h4>
+                                        <p class="profile_content_subtitle fontInter font500">Company or Organisation
+                                        </p>
+                                        <p class="profile_content_info fontInter mb-4">Description of your key
+                                            responsibilities, achievements, and the impact you made in your role at the
+                                            company.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 mt-3">
+                                <button type="button" class="btn button secondary_btn rounded_btn"
+                                    data-bs-toggle="modal" data-bs-target="#addEducation">Add your Education
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <!-- <div class="left_logo"></div> -->
+                        <div class="d-flex flex-column w-100">
+                            <div class="profile_content w-100">
+                                <h4 class="profile_content_title d-flex justify-content-between mb-3">
+                                    <span class="font700">Licences & certifications</span>
+                                    <!-- <button type="button" class="btn btn-transparent border-0 p-0"
+                                        data-bs-toggle="modal" data-bs-target="#addlicences">
+                                        <img src="./images/plussquare.png" alt="add">
+                                    </button> -->
+
+                                </h4>
+                                <div class="d-flex flex-row profile_content_box">
+                                    <div class="profile_content_exp">
+                                        <img src="./images/licence.png" alt="licence">
+                                    </div>
+                                    <div class="profile_content  w-100">
+                                        <h4 class="profile_content_title d-flex justify-content-between">
+                                            <span class="font700">Designation</span>
+                                            <div class="edit_box">
+                                                <button type="button" class="btn p-0 border-0" data-bs-toggle="modal"
+                                                    data-bs-target="#editlicences">
+                                                    <img src="./images/edit.png" alt="edit">
+                                                </button>
+                                            </div>
+                                        </h4>
+                                        <p class="profile_content_subtitle fontInter font500">Company or Organisation
+                                        </p>
+                                        <p class="profile_content_info fontInter mb-4">Description of your key
+                                            responsibilities, achievements, and the impact you made in your role at the
+                                            company.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 mt-3">
+                                <button type="button" class="btn button secondary_btn rounded_btn"
+                                    data-bs-toggle="modal" data-bs-target="#addlicences">Add your certifications
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <!-- <div class="left_logo"></div> -->
+                        <div class="d-flex flex-column w-100">
+                            <div class="profile_content w-100">
+                                <h4 class="profile_content_title d-flex justify-content-between mb-3">
+                                    <span class="font700">Volunteering</span>
+                                    <!-- <button type="button" class="btn btn-transparent border-0 p-0"
+                                        data-bs-toggle="modal" data-bs-target="#addvolunteer">
+                                        <img src="./images/plussquare.png" alt="add">
+                                    </button> -->
+
+                                </h4>
+                                <div class="d-flex flex-row profile_content_box">
+                                    <div class="profile_content_exp">
+                                        <img src="./images/role.png" alt="role">
+                                    </div>
+                                    <div class="profile_content  w-100">
+                                        <h4 class="profile_content_title d-flex justify-content-between">
+                                            <span class="font700">Role</span>
+                                            <div class="edit_box">
+                                                <button type="button" class="btn p-0 border-0" data-bs-toggle="modal"
+                                                    data-bs-target="#editVolunteer">
+                                                    <img src="./images/edit.png" alt="edit">
+                                                </button>
+                                            </div>
+                                        </h4>
+                                        <p class="profile_content_subtitle fontInter font500">Company or Organisation
+                                        </p>
+                                        <p class="profile_content_info fontInter mb-4">Description of your key
+                                            responsibilities, achievements, and the impact you made in your role at the
+                                            company.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 mt-3">
+                                <button type="button" class="btn button secondary_btn rounded_btn"
+                                    data-bs-toggle="modal" data-bs-target="#addVolunteer">Add your volunteering
+                                    contribution
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <!-- <div class="left_logo"></div> -->
+                        <div class="d-flex flex-column w-100">
                             <div class="d-flex flex-row profile_content_box">
-                                <div class="profile_content_exp">
-                                    <img src="./images/frame.png" alt="frame">
-                                </div>
-                                <div class="profile_content  w-100">
-                                    <h4 class="profile_content_title d-flex justify-content-between">
-                                        <span class="font700">Director of Cyber Security, Quantum Computing & Quantum
-                                            Cryptography</span>
-                                        <div class="edit_box">
-                                            <button type="button" class="btn p-0 border-0" data-bs-toggle="modal"
-                                                data-bs-target="#editskill">
-                                                <img src="./images/edit.png" alt="edit">
-                                            </button>
-                                        </div>
+                                <div class="profile_content w-100">
+                                    <h4 class="profile_content_title d-flex justify-content-between mb-3">
+                                        <span class="font700">Skills</span>
+                                        <!-- <button type="button" class="btn btn-transparent border-0 p-0"
+                                            data-bs-toggle="modal" data-bs-target="#addSkill">
+                                            <img src="./images/plussquare.png" alt="add">
+                                        </button> -->
                                     </h4>
-                                    <p class="profile_content_subtitle fontInter font500">Accenture</p>
-                                    <p class="profile_content_info fontInter mb-4">Leading Cyber Security & Quantum
-                                        Computing initiatives within the Financial Sector.</p>
+                                    <div class="d-flex flex-row profile_content_box">
+                                        <div class="profile_content_exp">
+                                            <img src="./images/frame.png" alt="frame">
+                                        </div>
+                                        <div class="profile_content  w-100">
+                                            <h4 class="profile_content_title d-flex justify-content-between">
+                                                <span class="font700">Designation</span>
+                                                <div class="edit_box">
+                                                    <button type="button" class="btn p-0 border-0"
+                                                        data-bs-toggle="modal" data-bs-target="#editskill">
+                                                        <img src="./images/edit.png" alt="edit">
+                                                    </button>
+                                                </div>
+                                            </h4>
+                                            <p class="profile_content_subtitle fontInter font500">Add your core
+                                                abilities and technical or soft skills relevant to your field.
+                                            </p>
+
+                                        </div>
+                                    </div>
+
                                 </div>
+                            </div>
+                            <div class="col-xl-2 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 add_your">
+                                <button type="button" class="btn button secondary_btn rounded_btn"
+                                    data-bs-toggle="modal" data-bs-target="#addVolunteer">Add your skills
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <!-- <div class="left_logo"></div> -->
+                        <div class="d-flex flex-column w-100">
+                            <div class="profile_content w-100">
+                                <h4 class="profile_content_title d-flex justify-content-between mb-3">
+                                    <span class="font700">Publications</span>
+                                    <!-- <button type="button" class="btn btn-transparent border-0 p-0"
+                                        data-bs-toggle="modal" data-bs-target="#addvolunteer">
+                                        <img src="./images/plussquare.png" alt="add">
+                                    </button> -->
+
+                                </h4>
+                                <div class="d-flex flex-row profile_content_box">
+                                    <div class="profile_content_exp">
+                                        <img src="./images/title.png" alt="title">
+                                    </div>
+                                    <div class="profile_content  w-100">
+                                        <h4 class="profile_content_title d-flex justify-content-between">
+                                            <span class="font700">Title</span>
+                                            <div class="edit_box">
+                                                <button type="button" class="btn p-0 border-0" data-bs-toggle="modal"
+                                                    data-bs-target="#editPublications">
+                                                    <img src="./images/edit.png" alt="edit">
+                                                </button>
+                                            </div>
+                                        </h4>
+                                        <p class="profile_content_subtitle fontInter font500">Publication platform
+                                        </p>
+                                        <!-- <p class="profile_content_info fontInter mb-4">Publication platform</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 add_your">
+                                <button type="button" class="btn button secondary_btn rounded_btn"
+                                    data-bs-toggle="modal" data-bs-target="#addPublications">
+                                    Add your publications
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <!-- <div class="left_logo"></div> -->
+                        <div class="d-flex flex-column w-100">
+                            <div class="profile_content w-100">
+                                <h4 class="profile_content_title d-flex justify-content-between mb-3">
+                                    <span class="font700">Patents</span>
+                                    <!-- <button type="button" class="btn btn-transparent border-0 p-0"
+                                        data-bs-toggle="modal" data-bs-target="#addvolunteer">
+                                        <img src="./images/plussquare.png" alt="add">
+                                    </button> -->
+
+                                </h4>
+                                <div class="d-flex flex-row profile_content_box">
+                                    <div class="profile_content_exp">
+                                        <img src="./images/title.png" alt="title">
+                                    </div>
+                                    <div class="profile_content  w-100">
+                                        <h4 class="profile_content_title d-flex justify-content-between">
+                                            <span class="font700">Title</span>
+                                            <div class="edit_box">
+                                                <button type="button" class="btn p-0 border-0" data-bs-toggle="modal"
+                                                    data-bs-target="#editPublication">
+                                                    <img src="./images/edit.png" alt="edit">
+                                                </button>
+                                            </div>
+                                        </h4>
+                                        <p class="profile_content_subtitle fontInter font500">Technology or innovation
+                                            details
+                                        </p>
+                                        <!-- <p class="profile_content_info fontInter mb-4">Publication platform</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 add_your">
+                                <button type="button" class="btn button secondary_btn rounded_btn"
+                                    data-bs-toggle="modal" data-bs-target="#addPublication">
+                                    Add your publications
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <!-- <div class="left_logo"></div> -->
+                        <div class="d-flex flex-column w-100">
+                            <div class="profile_content w-100">
+                                <h4 class="profile_content_title d-flex justify-content-between mb-3">
+                                    <span class="font700">Languages</span>
+                                    <!-- <button type="button" class="btn btn-transparent border-0 p-0"
+                                        data-bs-toggle="modal" data-bs-target="#addvolunteer">
+                                        <img src="./images/plussquare.png" alt="add">
+                                    </button> -->
+                                </h4>
+                            </div>
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 add_your">
+                                <button type="button" class="btn button secondary_btn rounded_btn"
+                                    data-bs-toggle="modal" data-bs-target="#addLanguage">
+                                    Add your Languages
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <!-- <div class="left_logo"></div> -->
+                        <div class="d-flex flex-column w-100">
+                            <div class="profile_content w-100">
+                                <h4 class="profile_content_title d-flex justify-content-between mb-3">
+                                    <span class="font700">Interests</span>
+                                    <!-- <button type="button" class="btn btn-transparent border-0 p-0"
+                                        data-bs-toggle="modal" data-bs-target="#addvolunteer">
+                                        <img src="./images/plussquare.png" alt="add">
+                                    </button> -->
+                                </h4>
+                            </div>
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 add_your">
+                                <button type="button" class="btn button secondary_btn rounded_btn"
+                                    data-bs-toggle="modal" data-bs-target="#addPublication">
+                                    Add your interests
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <!-- <div class="left_logo"></div> -->
+                        <div class="d-flex flex-column w-100">
+                            <div class="profile_content w-100">
+                                <h4 class="profile_content_title d-flex justify-content-between mb-3">
+                                    <span class="font700">Causes</span>
+                                    <!-- <button type="button" class="btn btn-transparent border-0 p-0"
+                                        data-bs-toggle="modal" data-bs-target="#addvolunteer">
+                                        <img src="./images/plussquare.png" alt="add">
+                                    </button> -->
+
+                                </h4>
+                                <div class="d-flex flex-row profile_content_box">
+                                    <div class="profile_content_exp">
+                                        <img src="./images/frame.png" alt="frame">
+                                    </div>
+                                    <div class="profile_content  w-100">
+                                        <h4 class="profile_content_title d-flex justify-content-between">
+                                            <span class="font700">Title</span>
+                                            <div class="edit_box">
+                                                <button type="button" class="btn p-0 border-0" data-bs-toggle="modal"
+                                                    data-bs-target="#editPublication">
+                                                    <img src="./images/edit.png" alt="edit">
+                                                </button>
+                                            </div>
+                                        </h4>
+                                        <p class="profile_content_subtitle fontInter font500">Description of the cause
+                                            or your contribution
+
+                                        </p>
+                                        <!-- <p class="profile_content_info fontInter mb-4">Publication platform</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 add_your">
+                                <button type="button" class="btn button secondary_btn rounded_btn"
+                                    data-bs-toggle="modal" data-bs-target="#addPublication">
+                                    Add causes you support
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -281,7 +645,33 @@
         </div>
     </section>
     <!-- Modal -->
-    <div class="modal fade" id="editpopup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="addAbout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                    <h5 class="modal-title" id="exampleModalLabel">Add About</h5>
+                    <button type="button" data-bs-dismiss="modal" class="p-0 bg-transparent border-0"
+                        aria-label="Close">
+                        <img src="./images/cross.png" alt="close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="about_survey_container">
+                        <p>Write about your years of experience, industry, or skills.</p>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        <div class="d-flex justify-content-end charLimit mt-2">560 / 2000</div>
+                    </div>
+                </div>
+                <div class="modal-footer pt-0">
+
+                    <div class="save_btn">
+                        <button type="button" class="button rounded_btn h-100">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editAbout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header d-flex justify-content-between">
@@ -552,7 +942,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="addvolunteer" tabindex="-1" aria-labelledby="editexperienceModalLabel"
+    <div class="modal fade" id="addVolunteer" tabindex="-1" aria-labelledby="editexperienceModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -596,7 +986,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="editvolunteer" tabindex="-1" aria-labelledby="editexperienceModalLabel"
+    <div class="modal fade" id="editVolunteer" tabindex="-1" aria-labelledby="editexperienceModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -674,7 +1064,120 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="editskill" tabindex="-1" aria-labelledby="addSkillModalLabel" aria-hidden="true">
+    <div class="modal fade" id="addLanguage" tabindex="-1" aria-labelledby="addSkillModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                    <h5 class="modal-title" id="exampleModalLabel">Add langauges</h5>
+                    <button type="button" data-bs-dismiss="modal" class="p-0 bg-transparent border-0"
+                        aria-label="Close">
+                        <img src="./images/cross.png" alt="close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="experience_survey_container">
+                        <div class="row g-3">
+                            <div class="col-xl-12 xol-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <label for="title" class="form-label">Languages</label>
+                                <input type="text" class="form-control" id="title" placeholder="Ex : English">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <div class="d-flex justify-content-end w-100 m-0">
+
+                        <div class="save_btn">
+                            <button type="button" class="button rounded_btn h-100">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editPublications" tabindex="-1" aria-labelledby="editPublicatonModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit publication</h5>
+                    <button type="button" data-bs-dismiss="modal" class="p-0 bg-transparent border-0"
+                        aria-label="Close">
+                        <img src="./images/cross.png" alt="close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="experience_survey_container">
+                        <div class="row g-3">
+                            <div class="col-xl-12 xol-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <label for="title" class="form-label">Title of the publication</label>
+                                <input type="text" class="form-control" id="Schoolofuniversity"
+                                    placeholder="Ex : University College London">
+                            </div>
+                            <div class="col-xl-12 xol-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <label for="organisation" class="form-label">Publication platform</label>
+                                <input type="text" class="form-control" id="degree" placeholder="Ex : Bachelor’s">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-between w-100">
+                        <div class="remove_btn">
+                            <button type="button" class="button rounded_btn h-100 secondary_btn">Remove</button>
+                        </div>
+                        <div class="save_btn">
+                            <button type="button" class="button rounded_btn h-100">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="addPublications" tabindex="-1" aria-labelledby="editPublicatonModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                    <h5 class="modal-title" id="exampleModalLabel">Add publication</h5>
+                    <button type="button" data-bs-dismiss="modal" class="p-0 bg-transparent border-0"
+                        aria-label="Close">
+                        <img src="./images/cross.png" alt="close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="experience_survey_container">
+                        <div class="row g-3">
+                            <div class="col-xl-12 xol-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <label for="title" class="form-label">Title of the publication</label>
+                                <input type="text" class="form-control" id="Schoolofuniversity"
+                                    placeholder="Ex : University College London">
+                            </div>
+                            <div class="col-xl-12 xol-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <label for="organisation" class="form-label">Publication platform</label>
+                                <input type="text" class="form-control" id="degree" placeholder="Ex : Bachelor’s">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-end w-100">
+                        <!-- <div class="remove_btn">
+                            <button type="button" class="button rounded_btn h-100 secondary_btn">Remove</button>
+                        </div> -->
+                        <div class="save_btn">
+                            <button type="button" class="button rounded_btn h-100">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="modal fade" id="editskill" tabindex="-1" aria-labelledby="addSkillModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header d-flex justify-content-between">
@@ -713,14 +1216,12 @@
                                         ONSORGE Ltd
                                     </label>
                                 </div>
-                                <!-- <input type="text" class="form-control" id="title"
-                                    placeholder="Ex : Project management"> -->
+                               
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
                     <div class="d-flex justify-content-between w-100 m-0">
                         <div class="remove_btn">
                             <button type="button" class="button rounded_btn h-100 secondary_btn">Remove</button>
@@ -733,7 +1234,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

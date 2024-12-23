@@ -117,6 +117,19 @@ body {
 .form-check-input {
   border: 1px solid var(--bs-black);
 }
+.form-check-input:checked[type=checkbox] {
+  background-image: url("../../images/checkbox_checked.png") !important;
+  background: url("../../images/checkbox_checked.png") var(--bs-white) no-repeat center !important;
+  border-color: var(--bs-black);
+}
+.form-check-input:focus {
+  box-shadow: none !important;
+  border-color: var(--bs-black);
+}
+
+.add_your {
+  margin-top: 40px;
+}
 
 .button {
   font-size: 1rem;
@@ -189,7 +202,7 @@ body {
   margin-bottom: 38px;
 }
 .registration_pg .registration_panel .registration_container .pwd-cls {
-  background: url("../../images/eye-off.png") no-repeat right var(--bs-disabled);
+  background: url("../../images/eye-off.png") no-repeat right;
   background-position: 97%;
 }
 .registration_pg .registration_panel .registration_container .eye_cls {
@@ -350,6 +363,8 @@ body {
 }
 .content_wrapper .card .profile_content .profile_content_box {
   gap: 24px;
+}
+.content_wrapper .card .profile_content .profile_content_box:not(:last-child) {
   border-bottom: 1px solid var(--bs-light-gray2);
   margin-bottom: 32px;
 }
@@ -393,9 +408,6 @@ header {
     gap: 16px;
     font-size: 1rem;
   }
-  header .menu ul li:hover {
-    background: var(--bs-white);
-  }
   header .rt_menu ul {
     list-style: none;
     margin-bottom: 0;
@@ -413,6 +425,9 @@ header {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
   }
+}
+header .logo {
+  padding-left: 32px;
 }
 
 @media (min-width: 768px) {
@@ -437,7 +452,7 @@ header {
   }
 }
 .main_content .leftsidebar ul {
-  padding-left: 0;
+  padding: 0 16px;
 }
 .main_content .leftsidebar ul li {
   list-style: none;
@@ -446,6 +461,19 @@ header {
 }
 .main_content .leftsidebar ul li a {
   gap: 20px;
+  color: var(--bs-white);
+}
+.main_content .leftsidebar ul li.active {
+  background: var(--bs-white);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+}
+.main_content .leftsidebar ul li.active a {
+  color: var(--bs-primary);
+}
+.main_content .leftsidebar ul li.active a span {
+  font-weight: 700;
 }
 .main_content .main_content_right {
   margin-left: 240px;
