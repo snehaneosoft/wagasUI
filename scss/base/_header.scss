@@ -38,6 +38,34 @@ header {
           }
         }
       }
+      .dropdown-toggle {
+        border: 1px solid var(--bs-white);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &::after {
+          background: url('../../images/downarr.png') no-repeat right;
+          border: none;
+          width: 14px;
+          height: 8px;
+        }
+      }
+      .dropdown-menu {
+        padding: 0 16px;
+        li {
+          padding: 16px 0;
+          &:not(:last-child) {
+            border-bottom: 1px solid var(--bs-light-gray);
+            margin-bottom: 8px;
+          }
+          .dropdown-item {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            padding: 9px 0;
+          }
+        }
+      }
     }
   }
   .logo {
@@ -75,8 +103,8 @@ header {
           background: var(--bs-white);
           @include border-radius(6px);
           a {
-            color: var(--bs-primary);  
-            span{
+            color: var(--bs-primary);
+            span {
               font-weight: 700;
             }
           }
