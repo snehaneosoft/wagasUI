@@ -16,6 +16,9 @@ header {
             padding: 12px 10px;
             gap: 16px;
             font-size: 1rem;
+            .dropdown-menu {
+              transform: translate(0px, 46px) !important;
+            }
           }
         }
       }
@@ -35,6 +38,9 @@ header {
               background: var(--bs-dark-gray);
               @include border-radius(50px);
             }
+            &.rt_menu_user{
+              font-size: 1rem;
+            }
           }
         }
       }
@@ -50,6 +56,11 @@ header {
           height: 8px;
         }
       }
+      .lang_drp {
+        .dropdown-menu {
+          transform: translate(0px, 50px) !important;
+        }
+      }
       .dropdown-menu {
         padding: 0 16px;
         li {
@@ -62,8 +73,20 @@ header {
             display: flex;
             gap: 24px;
             align-items: center;
-            padding: 9px 0;
+            padding: 0;
+            &:active,
+            &:hover {
+              background: var(--bs-white);
+              color: var(--bs-black);
+            }
+            // &.active {
+            //   background: var(--bs-light-gray);
+            //   @include border-radius(6px);
+            // }
           }
+        }
+        &.profile-drp-menu {
+          transform: translate(16px, 62px) !important;
         }
       }
     }

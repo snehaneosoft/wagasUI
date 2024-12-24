@@ -29,10 +29,15 @@ body {
         font-size: 1rem;
         color: var(--bs-black);
         margin-bottom: 5px;
+        color: var(--bs-light-gray3);
+        &.abt_txt {
+          color: var(--bs-black);
+        }
       }
       &_info {
         font-size: 0.875rem;
         color: var(--bs-black);
+        color: var(--bs-light-gray3);
       }
       .form-select {
         font-size: 1rem;
@@ -60,6 +65,7 @@ body {
           font-size: 1.12rem;
           margin-bottom: 4px;
           line-height: 24px;
+          color: var(--bs-light-gray3);
         }
       }
     }
@@ -75,5 +81,8 @@ body {
       line-height: 17px;
       color: var(--bs-black);
     }
+  }
+  .loc_txt {
+    font-size: 1.1rem;
   }
 }

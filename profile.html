@@ -113,7 +113,7 @@
                                 <span class="d-flex align-items-center rt_menu_span">English</span>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li class="py-0"><a class="dropdown-item" href="#">French</a></li>
+                                <li class="py-2"><a class="dropdown-item" href="#">French</a></li>
                                 <!-- <li><a class="dropdown-item" href="#">
                                         <img src="./images/settings.png" alt="settings">
                                         Settings</a>
@@ -141,17 +141,15 @@
                         </span> -->
                     </li>
                     <li class="text-white">
-
                         <div class="dropdown">
                             <button class="btn dropdown-toggle text-white border-0" type="button"
                                 id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="d-flex align-items-center rt_menu_span">
+                                <span class="d-flex align-items-center rt_menu_span rt_menu_user">
                                     <span class="gray_img_bx"></span>
                                     Johnathan
-
                                 </span>
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
+                            <ul class="dropdown-menu profile-drp-menu" aria-labelledby="dropdownMenuButton1">
                                 <li><a class="dropdown-item" href="#">
                                         <img src="./images/user.png" alt="user">
                                         Profile</a></li>
@@ -229,12 +227,12 @@
                             <span>Reports </span>
                         </a>
                     </li>
-                    <li class="active">
+                    <!-- <li class="active">
                         <a href="" class=" text-decoration-none d-flex align-items-center">
                             <img src="./images/icons/profile.png" alt="profile">
                             <span>Profile </span>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
                 <!-- <ul>
                     <li>
@@ -254,7 +252,12 @@
                         <div class="profile_content">
                             <h4 class="profile_content_title d-flex justify-content-between">
                                 <span class="font700">Johnathan Partouche</span>
-                                <div class="edit_box"><img src="./images/edit.png" alt="edit"></div>
+                                <div class="edit_box">
+                                    <button type="button" class="btn p-0 border-0" data-bs-toggle="modal"
+                                        data-bs-target="#editIntroduction">
+                                        <img src="./images/edit.png" alt="edit">
+                                    </button>
+                                </div>
                             </h4>
                             <p class="profile_content_subtitle fontInter font500">Director of Cyber Security, Quantum
                                 Computing & Quantum
@@ -281,13 +284,13 @@
                         </div>
 
                     </div> -->
-                    <div class="card">
+                    <!-- <div class="card">
                         <div class="profile_content w-100">
                             <h4 class="profile_content_title d-flex justify-content-between mb-3">
                                 <span class="font700">Suggested For you</span>
                             </h4>
                             <p class="profile_content_info fontInter">Are you not working at Accenture?</p>
-                            <div class="col-md-3">
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-6 col-sm-4 col-12">
                                 <button type="button" class="button rounded_btn">Confirm Current Position</button>
                             </div>
                         </div>
@@ -333,7 +336,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="card">
                         <div class="profile_content w-100">
                             <h4 class="profile_content_title d-flex justify-content-between mb-3">
@@ -350,8 +353,8 @@
                                 </div> -->
                             </h4>
                             <h4 class="profile_content_title d-flex justify-content-between">
-                                <p class="profile_content_subtitle fontInter mb-0">
-                                    Write a brief summary of your professional experience, industry and key skills..</p>
+                                <p class="profile_content_subtitle fontInter mb-0 abt_txt">
+                                    Write a brief summary of your professional experience, industry and key skills.</p>
                                 <div class="edit_box">
                                     <button type="button" class="btn p-0 border-0" data-bs-toggle="modal"
                                         data-bs-target="#editAbout">
@@ -361,7 +364,7 @@
                             </h4>
                             <!-- <p class="profile_content_subtitle fontInter mb-0">
                                 Write a brief summary of your professional experience, industry and key skills..</p> -->
-                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 mt-3">
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-6 col-sm-4 col-12 mt-3">
                                 <button type="button" class="btn button secondary_btn rounded_btn"
                                     data-bs-toggle="modal" data-bs-target="#addAbout">Add your profile summary</button>
                             </div>
@@ -401,9 +404,9 @@
                                 </div>
 
                             </div>
-                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 mt-3">
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-6 col-sm-4 col-12 mt-3">
                                 <button type="button" class="btn button secondary_btn rounded_btn"
-                                    data-bs-toggle="modal" data-bs-target="#addAbout">Add your Work Experience
+                                    data-bs-toggle="modal" data-bs-target="#addExperience">Add your Work Experience
                                 </button>
                             </div>
                         </div>
@@ -442,7 +445,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 mt-3">
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-6 col-sm-4 col-12 mt-3">
                                 <button type="button" class="btn button secondary_btn rounded_btn"
                                     data-bs-toggle="modal" data-bs-target="#addEducation">Add your Education
                                 </button>
@@ -483,7 +486,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 mt-3">
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-6 col-sm-4 col-12 mt-3">
                                 <button type="button" class="btn button secondary_btn rounded_btn"
                                     data-bs-toggle="modal" data-bs-target="#addlicences">Add your certifications
                                 </button>
@@ -524,7 +527,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 mt-3">
+                            <div class="col-xl-4 col-xxl-3 col-lg-3 col-md-6 col-sm-4 col-12 mt-3">
                                 <button type="button" class="btn button secondary_btn rounded_btn"
                                     data-bs-toggle="modal" data-bs-target="#addVolunteer">Add your volunteering
                                     contribution
@@ -535,22 +538,29 @@
                     <div class="card">
                         <!-- <div class="left_logo"></div> -->
                         <div class="d-flex flex-column w-100">
-                            <div class="d-flex flex-row profile_content_box">
+                            <div class="d-flex flex-column profile_content_box">
                                 <div class="profile_content w-100">
                                     <h4 class="profile_content_title d-flex justify-content-between mb-3">
                                         <span class="font700">Skills</span>
-                                        <!-- <button type="button" class="btn btn-transparent border-0 p-0"
-                                            data-bs-toggle="modal" data-bs-target="#addSkill">
-                                            <img src="./images/plussquare.png" alt="add">
-                                        </button> -->
                                     </h4>
-                                    <div class="d-flex flex-row profile_content_box">
-                                        <div class="profile_content_exp">
+                                    <div class="d-flex flex-column profile_content_box">
+                                        <!-- <div class="profile_content_exp">
                                             <img src="./images/frame.png" alt="frame">
-                                        </div>
-                                        <div class="profile_content  w-100">
+                                        </div> -->
+                                        <h4 class="profile_content_title d-flex justify-content-between">
+                                            <p class="profile_content_subtitle fontInter mb-0 abt_txt">
+                                                Add your core abilities and technical or soft skills relevant to your
+                                                field.</p>
+                                            <!-- <div class="edit_box">
+                                                <button type="button" class="btn p-0 border-0" data-bs-toggle="modal" data-bs-target="#editAbout">
+                                                    <img src="./images/edit.png" alt="edit">
+                                                </button>
+                                            </div> -->
+                                        </h4>
+
+                                        <!-- <div class="profile_content  w-100">
                                             <h4 class="profile_content_title d-flex justify-content-between">
-                                                <span class="font700">Designation</span>
+                                                <span class="font700">Add your core abilities and technical or soft skills relevant to your field.</span>
                                                 <div class="edit_box">
                                                     <button type="button" class="btn p-0 border-0"
                                                         data-bs-toggle="modal" data-bs-target="#editskill">
@@ -562,14 +572,20 @@
                                                 abilities and technical or soft skills relevant to your field.
                                             </p>
 
-                                        </div>
+                                        </div> -->
                                     </div>
-
+                                </div>
+                                <div class="col-12">
+                                    <ul class="chip_ul">
+                                        <li class="chip_li font600">English</li>
+                                        <li class="chip_li font600">Hindi</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="col-xl-2 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 add_your">
+
+                            <div class="col-xl-2 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 mt-3">
                                 <button type="button" class="btn button secondary_btn rounded_btn"
-                                    data-bs-toggle="modal" data-bs-target="#addVolunteer">Add your skills
+                                    data-bs-toggle="modal" data-bs-target="#addSkill">Add your skills
                                 </button>
                             </div>
                         </div>
@@ -606,7 +622,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 add_your">
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-6 col-sm-4 col-12 add_your">
                                 <button type="button" class="btn button secondary_btn rounded_btn"
                                     data-bs-toggle="modal" data-bs-target="#addPublications">
                                     Add your publications
@@ -647,7 +663,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 add_your">
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-6 col-sm-4 col-12 add_your">
                                 <button type="button" class="btn button secondary_btn rounded_btn"
                                     data-bs-toggle="modal" data-bs-target="#addPublication">
                                     Add your publications
@@ -659,7 +675,7 @@
                         <!-- <div class="left_logo"></div> -->
                         <div class="d-flex flex-column w-100">
                             <div class="profile_content w-100">
-                                <h4 class="profile_content_title d-flex justify-content-between mb-3">
+                                <h4 class="profile_content_title d-flex justify-content-between">
                                     <span class="font700">Languages</span>
                                     <!-- <button type="button" class="btn btn-transparent border-0 p-0"
                                         data-bs-toggle="modal" data-bs-target="#addvolunteer">
@@ -667,7 +683,13 @@
                                     </button> -->
                                 </h4>
                             </div>
-                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 add_your">
+                            <div class="col-12">
+                                <ul class="chip_ul">
+                                    <li class="chip_li font600">English</li>
+                                    <li class="chip_li font600">Hindi</li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-6 col-sm-4 col-12 ">
                                 <button type="button" class="btn button secondary_btn rounded_btn"
                                     data-bs-toggle="modal" data-bs-target="#addLanguage">
                                     Add your Languages
@@ -679,7 +701,7 @@
                         <!-- <div class="left_logo"></div> -->
                         <div class="d-flex flex-column w-100">
                             <div class="profile_content w-100">
-                                <h4 class="profile_content_title d-flex justify-content-between mb-3">
+                                <h4 class="profile_content_title d-flex justify-content-between">
                                     <span class="font700">Interests</span>
                                     <!-- <button type="button" class="btn btn-transparent border-0 p-0"
                                         data-bs-toggle="modal" data-bs-target="#addvolunteer">
@@ -687,9 +709,15 @@
                                     </button> -->
                                 </h4>
                             </div>
-                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 add_your">
+                            <div class="col-12">
+                                <ul class="chip_ul">
+                                    <li class="chip_li font600">Cryptography</li>
+                                    <li class="chip_li font600">Top voices</li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-6 col-sm-4 col-12">
                                 <button type="button" class="btn button secondary_btn rounded_btn"
-                                    data-bs-toggle="modal" data-bs-target="#addPublication">
+                                    data-bs-toggle="modal" data-bs-target="#addInterest">
                                     Add your interests
                                 </button>
                             </div>
@@ -729,7 +757,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-4 col-12 add_your">
+                            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-6 col-sm-4 col-12 add_your">
                                 <button type="button" class="btn button secondary_btn rounded_btn"
                                     data-bs-toggle="modal" data-bs-target="#addPublication">
                                     Add causes you support
@@ -838,7 +866,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="addexperience" tabindex="-1" aria-labelledby="addexperienceModalLabel"
+    <div class="modal fade" id="addExperience" tabindex="-1" aria-labelledby="addExperienceModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -1127,7 +1155,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="addskill" tabindex="-1" aria-labelledby="addSkillModalLabel" aria-hidden="true">
+    <div class="modal fade" id="addSkill" tabindex="-1" aria-labelledby="addSkillModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header d-flex justify-content-between">
@@ -1151,7 +1179,7 @@
                 </div>
                 <div class="modal-footer">
                     <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                    <div class="d-flex justify-content-between w-100 m-0">
+                    <div class="d-flex justify-content-end w-100 m-0">
 
                         <div class="save_btn">
                             <button type="button" class="button rounded_btn h-100">Save</button>
@@ -1262,6 +1290,93 @@
                     </div>
                 </div>
                 <div class="modal-footer">
+                    <div class="d-flex justify-content-end w-100">
+                        <!-- <div class="remove_btn">
+                            <button type="button" class="button rounded_btn h-100 secondary_btn">Remove</button>
+                        </div> -->
+                        <div class="save_btn">
+                            <button type="button" class="button rounded_btn h-100">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="addInterest" tabindex="-1" aria-labelledby="addInterestModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Interests</h5>
+                    <button type="button" data-bs-dismiss="modal" class="p-0 bg-transparent border-0"
+                        aria-label="Close">
+                        <img src="./images/cross.png" alt="close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="experience_survey_container">
+                        <div class="row g-3">
+                            <div class="col-xl-12 xol-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <label for="title" class="form-label">Interests</label>
+                                <input type="text" class="form-control" id="title"
+                                    placeholder="Ex : Project management">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <div class="d-flex justify-content-end w-100 m-0">
+
+                        <div class="save_btn">
+                            <button type="button" class="button rounded_btn h-100">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editIntroduction" tabindex="-1" aria-labelledby="editIntroductionModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Introduction</h5>
+                    <button type="button" data-bs-dismiss="modal" class="p-0 bg-transparent border-0"
+                        aria-label="Close">
+                        <img src="./images/cross.png" alt="close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="experience_survey_container">
+                        <div class="row g-3">
+                            <div class="col-xl-12 xol-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <label for="title" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="title" placeholder="name@example.com">
+                            </div>
+                            <div class="col-xl-12 xol-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <label for="organisation" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastname" placeholder="Partouche">
+                            </div>
+                            <div class="col-xl-12 xol-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <label for="description" class="form-label">Headline</label>
+                                <input type="text" class="form-control" id="headline"
+                                    placeholder="Director of Cyber Security, Quantum Computing & Quantum Cryptography at Accenture">
+                            </div>
+                            <h4 class="font600 fontInter loc_txt mb-0">Location</h4>
+                            <div class="col-xl-12 xol-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <label for="description" class="form-label">Country</label>
+                                <input type="text" class="form-control" id="headline" placeholder="France">
+                            </div>
+                            <div class="col-xl-12 xol-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <label for="description" class="form-label">City</label>
+                                <input type="text" class="form-control" id="headline" placeholder="Paris">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
                     <div class="d-flex justify-content-end w-100">
                         <!-- <div class="remove_btn">
                             <button type="button" class="button rounded_btn h-100 secondary_btn">Remove</button>
