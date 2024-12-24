@@ -542,6 +542,12 @@
                                 <div class="profile_content w-100">
                                     <h4 class="profile_content_title d-flex justify-content-between mb-3">
                                         <span class="font700">Skills</span>
+                                        <div class="edit_box">
+                                            <button type="button" class="btn p-0 border-0" data-bs-toggle="modal"
+                                                data-bs-target="#editSkill">
+                                                <img src="./images/edit.png" alt="edit">
+                                            </button>
+                                        </div>
                                     </h4>
                                     <div class="d-flex flex-column profile_content_box">
                                         <!-- <div class="profile_content_exp">
@@ -677,10 +683,10 @@
                             <div class="profile_content w-100">
                                 <h4 class="profile_content_title d-flex justify-content-between">
                                     <span class="font700">Languages</span>
-                                    <!-- <button type="button" class="btn btn-transparent border-0 p-0"
-                                        data-bs-toggle="modal" data-bs-target="#addvolunteer">
-                                        <img src="./images/plussquare.png" alt="add">
-                                    </button> -->
+                                    <button type="button" class="btn btn-transparent border-0 p-0"
+                                        data-bs-toggle="modal" data-bs-target="#editLanguage">
+                                        <img src="./images/edit.png" alt="edit">
+                                    </button>
                                 </h4>
                             </div>
                             <div class="col-12">
@@ -703,10 +709,10 @@
                             <div class="profile_content w-100">
                                 <h4 class="profile_content_title d-flex justify-content-between">
                                     <span class="font700">Interests</span>
-                                    <!-- <button type="button" class="btn btn-transparent border-0 p-0"
-                                        data-bs-toggle="modal" data-bs-target="#addvolunteer">
-                                        <img src="./images/plussquare.png" alt="add">
-                                    </button> -->
+                                    <button type="button" class="btn btn-transparent border-0 p-0"
+                                        data-bs-toggle="modal" data-bs-target="#editInterest">
+                                        <img src="./images/edit.png" alt="edit">
+                                    </button>
                                 </h4>
                             </div>
                             <div class="col-12">
@@ -1381,6 +1387,144 @@
                         <!-- <div class="remove_btn">
                             <button type="button" class="button rounded_btn h-100 secondary_btn">Remove</button>
                         </div> -->
+                        <div class="save_btn">
+                            <button type="button" class="button rounded_btn h-100">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editSkill" tabindex="-1" aria-labelledby="addSkillModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit skill</h5>
+                    <button type="button" data-bs-dismiss="modal" class="p-0 bg-transparent border-0"
+                        aria-label="Close">
+                        <img src="./images/cross.png" alt="close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="experience_survey_container">
+                        <div class="row g-3">
+                            <div class="col-xl-12 xol-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <label for="title" class="form-label">Skills</label>
+                                <ul class="chip_ul skills_list_chip m-0">
+                                    <li class="chip_li font600">Cyber Defence
+                                        <button type="button"
+                                            class="btn btn-transparent border-0 p-0 font600">x</button>
+                                    </li>
+                                    <li class="chip_li font600">Quantum Computing
+                                        <button type="button"
+                                            class="btn btn-transparent border-0 p-0 font600">x</button>
+
+                                    </li>
+                                    <li class="chip_li font600">Cryptography
+                                        <button type="button"
+                                            class="btn btn-transparent border-0 p-0 font600">x</button>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <div class="d-flex justify-content-end w-100 m-0">
+
+                        <div class="save_btn">
+                            <button type="button" class="button rounded_btn h-100">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editLanguage" tabindex="-1" aria-labelledby="addSkillModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Language</h5>
+                    <button type="button" data-bs-dismiss="modal" class="p-0 bg-transparent border-0"
+                        aria-label="Close">
+                        <img src="./images/cross.png" alt="close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="experience_survey_container">
+                        <div class="row g-3">
+                            <div class="col-xl-12 xol-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <label for="title" class="form-label">langauges</label>
+                                <ul class="chip_ul skills_list_chip m-0">
+                                    <li class="chip_li font600">Cyber Defence
+                                        <button type="button"
+                                            class="btn btn-transparent border-0 p-0 font600">x</button>
+                                    </li>
+                                    <li class="chip_li font600">Quantum Computing
+                                        <button type="button"
+                                            class="btn btn-transparent border-0 p-0 font600">x</button>
+                                    </li>
+                                    <li class="chip_li font600">Cryptography
+                                        <button type="button"
+                                            class="btn btn-transparent border-0 p-0 font600">x</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <div class="d-flex justify-content-end w-100 m-0">
+
+                        <div class="save_btn">
+                            <button type="button" class="button rounded_btn h-100">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editInterest" tabindex="-1" aria-labelledby="addSkillModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Interest</h5>
+                    <button type="button" data-bs-dismiss="modal" class="p-0 bg-transparent border-0"
+                        aria-label="Close">
+                        <img src="./images/cross.png" alt="close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="experience_survey_container">
+                        <div class="row g-3">
+                            <div class="col-xl-12 xol-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <label for="title" class="form-label">Interest</label>
+                                <ul class="chip_ul skills_list_chip m-0">
+                                    <li class="chip_li font600">Cyber Defence
+                                        <button type="button"
+                                            class="btn btn-transparent border-0 p-0 font600">x</button>
+                                    </li>
+                                    <li class="chip_li font600">Quantum Computing
+                                        <button type="button"
+                                            class="btn btn-transparent border-0 p-0 font600">x</button>
+                                    </li>
+                                    <li class="chip_li font600">Cryptography
+                                        <button type="button"
+                                            class="btn btn-transparent border-0 p-0 font600">x</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <div class="d-flex justify-content-end w-100 m-0">
+
                         <div class="save_btn">
                             <button type="button" class="button rounded_btn h-100">Save</button>
                         </div>

@@ -161,3 +161,10 @@ body {
     border: 1px solid var(--bs-black);
   }
 }
+.skills_list_chip{
+  .chip_li{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}
