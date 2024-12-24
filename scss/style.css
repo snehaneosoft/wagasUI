@@ -526,7 +526,13 @@ header {
   }
 }
 header .logo {
-  padding-left: 32px;
+  padding-left: 0px;
+}
+header .logo a {
+  display: flex;
+  gap: 10px;
+  font-size: 1.3rem;
+  line-height: 29px;
 }
 
 @media (min-width: 768px) {
@@ -551,7 +557,7 @@ header .logo {
   }
 }
 .main_content .leftsidebar ul {
-  padding: 0 16px;
+  padding: 20px 16px 32px 16px;
 }
 .main_content .leftsidebar ul li {
   list-style: none;

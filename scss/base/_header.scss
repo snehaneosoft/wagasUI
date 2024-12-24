@@ -38,7 +38,7 @@ header {
               background: var(--bs-dark-gray);
               @include border-radius(50px);
             }
-            &.rt_menu_user{
+            &.rt_menu_user {
               font-size: 1rem;
             }
           }
@@ -92,7 +92,13 @@ header {
     }
   }
   .logo {
-    padding-left: 32px;
+    padding-left: 0px;
+    a {
+      display: flex;
+      gap: 10px;
+      font-size: 1.3rem;
+      line-height: 29px;
+    }
   }
 }
 .main_content {
@@ -113,7 +119,8 @@ header {
       top: 68px;
     }
     ul {
-      padding: 0 16px;
+      // padding: 0 16px;
+      padding: 20px 16px 32px 16px;
       li {
         list-style: none;
         padding: 12px 16px;
