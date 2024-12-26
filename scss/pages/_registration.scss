@@ -2,6 +2,7 @@
   font-size: 1.8rem;
   padding: 40px 0 0 0;
   text-align: center;
+  color: var(--bs-primary);
   @include medium-screen {
     max-width: 592px;
     margin: 0 auto;
@@ -13,7 +14,7 @@
   @include medium-screen {
     max-width: 592px;
     margin: 30px auto;
-    height: 100%;
+    border: 1px solid var(--bs-primary);
   }
   .text_readonly {
     color: var(--bs-gray);

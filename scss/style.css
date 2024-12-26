@@ -8,9 +8,12 @@ html {
 }
 
 body {
-  background: var(--bs-purple);
   font-size: 1rem;
   font-family: "Inter";
+}
+body.user_act_page {
+  background: url("../../images/logobg.png") no-repeat var(--bs-dark-blue2);
+  background-size: contain;
 }
 
 .input_field {
@@ -205,6 +208,7 @@ body {
   font-size: 1.8rem;
   padding: 40px 0 0 0;
   text-align: center;
+  color: var(--bs-primary);
 }
 @media (min-width: 768px) {
   .registartion_title_h4 {
@@ -223,7 +227,7 @@ body {
   .registration_pg {
     max-width: 592px;
     margin: 30px auto;
-    height: 100%;
+    border: 1px solid var(--bs-primary);
   }
 }
 .registration_pg .text_readonly {
@@ -632,7 +636,8 @@ header .logo a {
   --bs-light-gray: #d9d9d9;
   --bs-light-gray1: #d0d5dd;
   --bs-light-gray2: #e8e8e8;
-  --bs-light-blue: #6A8295;
-  --bs-light-gray3: #8F8F8F;
-  --bs-dark-gray1: #B7C7D0;
+  --bs-light-blue: #6a8295;
+  --bs-light-gray3: #8f8f8f;
+  --bs-dark-gray1: #b7c7d0;
+  --bs-dark-blue2: #ccdfe8;
 }/*# sourceMappingURL=style.css.map */
