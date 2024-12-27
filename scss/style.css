@@ -470,6 +470,10 @@ header {
     padding: 12px 10px;
     gap: 16px;
     font-size: 1rem;
+    border: 1px solid transparent;
+  }
+  header .menu ul li .menu_span:hover {
+    border: 1px solid var(--bs-primary);
   }
   header .menu ul li .menu_span .dropdown-menu {
     transform: translate(0px, 46px) !important;
