@@ -139,6 +139,8 @@ body.user_act_page {
   display: flex;
   align-items: center;
   gap: 10px;
+  color: var(--bs-primary);
+  font-weight: 600;
 }
 .dropdown-toggle::after {
   background: url("../../images/downarr.png") no-repeat right;
@@ -361,6 +363,7 @@ body {
   flex-direction: column;
 }
 .content_wrapper .card {
+  border: 1px solid var(--bs-primary);
   background: var(--bs-white);
   padding: 30px;
   flex-direction: row;
@@ -447,12 +450,13 @@ body {
 }
 
 header {
-  background: var(--bs-primary);
+  background: var(--bs-purple);
   padding: 0 16px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1;
+  border-bottom: 1px solid var(--bs-secondary);
 }
 @media (min-width: 768px) {
   header .menu ul {
@@ -491,10 +495,12 @@ header {
     font-size: 1rem;
   }
   header .rt_menu .dropdown-toggle {
-    border: 1px solid var(--bs-white);
+    border: 1px solid var(--bs-primary);
     display: flex;
     align-items: center;
     gap: 10px;
+    color: var(--bs-primary);
+    font-weight: 600;
   }
   header .rt_menu .dropdown-toggle::after {
     background: url("../../images/downarr.png") no-repeat right;
@@ -537,6 +543,7 @@ header .logo a {
   gap: 10px;
   font-size: 1.3rem;
   line-height: 29px;
+  color: var(--bs-secondary);
 }
 
 @media (min-width: 768px) {
@@ -546,13 +553,14 @@ header .logo a {
 }
 .main_content .leftsidebar {
   width: 240px;
-  background: var(--bs-primary);
+  background: var(--bs-purple);
   height: calc(100vh - 100px);
   height: calc(100vh - 68px);
   overflow-y: auto;
   justify-content: space-between;
   display: flex;
   flex-direction: column;
+  border-right: 1px solid var(--bs-secondary);
 }
 @media (min-width: 768px) {
   .main_content .leftsidebar {
@@ -566,11 +574,11 @@ header .logo a {
 .main_content .leftsidebar ul li {
   list-style: none;
   padding: 12px 16px;
-  color: var(--bs-white);
 }
 .main_content .leftsidebar ul li a {
   gap: 20px;
-  color: var(--bs-white);
+  color: var(--bs-primary);
+  font-weight: 600;
 }
 .main_content .leftsidebar ul li.active {
   background: var(--bs-white);

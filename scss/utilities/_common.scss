@@ -134,6 +134,8 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  color: var(--bs-primary);
+  font-weight: 600;
   &::after {
     background: url('../../images/downarr.png') no-repeat right;
     border: none;

@@ -1,10 +1,12 @@
 header {
-  background: var(--bs-primary);
+  // background: var(--bs-primary);
+  background: var(--bs-purple);
   padding: 0 16px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1;
+  border-bottom: 1px solid var(--bs-secondary);
   @include medium-screen {
     .menu {
       ul {
@@ -45,10 +47,12 @@ header {
         }
       }
       .dropdown-toggle {
-        border: 1px solid var(--bs-white);
+        border: 1px solid var(--bs-primary);
         display: flex;
         align-items: center;
         gap: 10px;
+        color: var(--bs-primary);
+        font-weight: 600;
         &::after {
           background: url('../../images/downarr.png') no-repeat right;
           border: none;
@@ -98,6 +102,7 @@ header {
       gap: 10px;
       font-size: 1.3rem;
       line-height: 29px;
+      color: var(--bs-secondary);
     }
   }
 }
@@ -107,13 +112,15 @@ header {
   }
   .leftsidebar {
     width: 240px;
-    background: var(--bs-primary);
+    // background: var(--bs-primary);
+    background: var(--bs-purple);
     height: calc(100vh - 100px);
     height: calc(100vh - 68px);
     overflow-y: auto;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+    border-right: 1px solid var(--bs-secondary);
     @include medium-screen {
       position: fixed;
       top: 68px;
@@ -124,10 +131,11 @@ header {
       li {
         list-style: none;
         padding: 12px 16px;
-        color: var(--bs-white);
+
         a {
           gap: 20px;
-          color: var(--bs-white);
+          color: var(--bs-primary);
+          font-weight: 600;
         }
         &.active {
           background: var(--bs-white);
