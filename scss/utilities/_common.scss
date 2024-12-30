@@ -175,3 +175,11 @@ body {
     align-items: center;
   }
 }
+.error_note {
+  font-size: 0.85rem;
+  line-height: 19px;
+  letter-spacing: 0.3px;
+  color: var(--bs-red-error) !important;
+  display: block;
+  width: 100%;
+}
