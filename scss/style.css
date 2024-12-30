@@ -372,7 +372,7 @@ body {
   flex-direction: column;
 }
 .content_wrapper .card {
-  border: 1px solid var(--bs-primary);
+  border: 1px solid var(--bs-gray-border);
   background: var(--bs-white);
   padding: 30px;
   flex-direction: row;
@@ -667,4 +667,5 @@ header .logo a {
   --bs-dark-gray1: #b7c7d0;
   --bs-dark-blue2: #ccdfe8;
   --bs-red-error: #EA4335;
+  --bs-gray-border: #d8d8d8;
 }/*# sourceMappingURL=style.css.map */

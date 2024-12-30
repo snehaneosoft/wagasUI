@@ -6,7 +6,8 @@ body {
   gap: 16px;
   flex-direction: column;
   .card {
-    border: 1px solid var(--bs-primary);
+    // border: 1px solid var(--bs-primary);
+    border: 1px solid var(--bs-gray-border);
     background: var(--bs-white);
     padding: 30px;
     flex-direction: row;
