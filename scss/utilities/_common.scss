@@ -11,9 +11,12 @@ body {
   font-size: 1rem;
   font-family: 'Inter';
   &.user_act_page {
-    background: url('../../images/logobg.png') no-repeat var(--bs-purple);
-    background-size: 52%;
-    background-attachment: fixed;
+    background: var(--bs-res-gray);
+    @include medium-screen {
+      background: url('../../images/logobg.png') no-repeat var(--bs-purple);
+      background-size: 52%;
+      background-attachment: fixed;
+    }
   }
 }
 .input_field {

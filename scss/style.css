@@ -12,9 +12,14 @@ body {
   font-family: "Inter";
 }
 body.user_act_page {
-  background: url("../../images/logobg.png") no-repeat var(--bs-purple);
-  background-size: 52%;
-  background-attachment: fixed;
+  background: var(--bs-res-gray);
+}
+@media (min-width: 768px) {
+  body.user_act_page {
+    background: url("../../images/logobg.png") no-repeat var(--bs-purple);
+    background-size: 52%;
+    background-attachment: fixed;
+  }
 }
 
 .input_field {
@@ -225,15 +230,28 @@ body.user_act_page {
 }
 
 .registartion_title_h4 {
-  font-size: 3rem;
+  font-size: 1.6rem;
   padding: 40px 0 0 0;
   text-align: center;
   color: var(--bs-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .registartion_title_h4 {
     max-width: 592px;
     margin: 0 auto;
+    font-size: 3rem;
+  }
+}
+.registartion_title_h4 .res_logo {
+  display: block;
+}
+@media (min-width: 768px) {
+  .registartion_title_h4 .res_logo {
+    display: none;
   }
 }
 
@@ -255,6 +273,20 @@ body.user_act_page {
 }
 .registration_pg .registration_top {
   padding: 24px 0 66px 0;
+  display: none;
+}
+@media (min-width: 768px) {
+  .registration_pg .registration_top {
+    display: flex;
+  }
+}
+.registration_pg .res_top {
+  margin-top: 56px;
+}
+@media (min-width: 768px) {
+  .registration_pg .res_top {
+    margin-top: 0;
+  }
 }
 .registration_pg .back_txt {
   color: var(--bs-black);
@@ -263,7 +295,17 @@ body.user_act_page {
   line-height: 16px;
 }
 .registration_pg .registration_panel {
-  padding: 0 50px;
+  padding: 0 16px;
+  background: var(--bs-res-gray);
+}
+@media (min-width: 768px) {
+  .registration_pg .registration_panel {
+    padding: 0 50px;
+    background: var(--bs-white);
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+  }
 }
 .registration_pg .registration_panel .registration_container .title {
   font-size: 1.5rem;
@@ -293,8 +335,15 @@ body.user_act_page {
 }
 .registration_pg .registration_panel .registration_container .reg_warp .forget_pwd_lbl {
   font-size: 0.875rem;
-  color: var(--bs-black);
+  color: var(--bs-primary);
   line-height: 16px;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .registration_pg .registration_panel .registration_container .reg_warp .forget_pwd_lbl {
+    text-decoration: underline;
+    color: var(--bs-black);
+  }
 }
 .registration_pg .registration_panel .registration_container .continue_btn {
   gap: 16px;
@@ -685,6 +734,7 @@ header .logo a {
   --bs-light-gray3: #8f8f8f;
   --bs-dark-gray1: #b7c7d0;
   --bs-dark-blue2: #ccdfe8;
-  --bs-red-error: #EA4335;
+  --bs-red-error: #ea4335;
   --bs-gray-border: #d8d8d8;
+  --bs-res-gray: #f6f5ff;
 }/*# sourceMappingURL=style.css.map */
