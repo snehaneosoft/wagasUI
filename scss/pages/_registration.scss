@@ -1,5 +1,6 @@
 .registartion_title_h4 {
-  font-size: 1.8rem;
+  // font-size: 1.8rem;
+  font-size: 3rem;
   padding: 40px 0 0 0;
   text-align: center;
   color: var(--bs-primary);
@@ -10,7 +11,7 @@
 }
 .registration_pg {
   background: var(--bs-white);
-  @include border-radius(40px);
+  @include border-radius(24px);
   @include medium-screen {
     max-width: 592px;
     margin: 30px auto;
@@ -148,3 +149,8 @@
     }
   }
 }
+// .img-container-left{
+//   position: fixed;
+//   top: 0;
+//   z-index: -1;
+// }

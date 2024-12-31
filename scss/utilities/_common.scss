@@ -11,8 +11,9 @@ body {
   font-size: 1rem;
   font-family: 'Inter';
   &.user_act_page {
-    background: url('../../images/logobg.png') no-repeat var(--bs-dark-blue2);
-    background-size: contain;
+    background: url('../../images/logobg.png') no-repeat var(--bs-purple);
+    background-size: 52%;
+    background-attachment: fixed;
   }
 }
 .input_field {
@@ -142,6 +143,10 @@ body {
     width: 14px;
     height: 8px;
   }
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
 }
 .dropdown-toggle {
   &::after {
@@ -182,4 +187,7 @@ body {
   color: var(--bs-red-error) !important;
   display: block;
   width: 100%;
+}
+.dropdown-menu {
+  min-width: 100% !important;
 }
