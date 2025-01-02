@@ -256,3 +256,10 @@ body {
     margin-top: 4px;
   }
 }
+.error_lbl {
+  gap: 10px;
+  font-size: 0.875rem;
+  line-height: 17px;
+  color: var(--bs-red-error);
+  margin-top: 4px;
+}
