@@ -381,11 +381,17 @@ body.user_act_page {
   width: 100%;
 }
 .registration_pg .registration_panel .registration_container .or_lbl {
-  left: 46%;
+  left: 42%;
   top: 12px;
-  background: var(--bs-white);
+  background: var(--bs-res-gray);
   z-index: 1;
   padding: 0 12px;
+}
+@media (min-width: 768px) {
+  .registration_pg .registration_panel .registration_container .or_lbl {
+    background: var(--bs-white);
+    left: 46%;
+  }
 }
 .registration_pg .registration_panel .registration_container .already_section .already_lbl {
   padding: 37px 0 66px 0;

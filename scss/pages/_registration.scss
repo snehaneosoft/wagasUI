@@ -131,11 +131,15 @@
         }
       }
       .or_lbl {
-        left: 46%;
+        left: 42%;
         top: 12px;
-        background: var(--bs-white);
+        background: var(--bs-res-gray);
         z-index: 1;
         padding: 0 12px;
+        @include medium-screen{
+          background: var(--bs-white);
+          left: 46%;
+        }
       }
       .already_section {
         .already_lbl {
