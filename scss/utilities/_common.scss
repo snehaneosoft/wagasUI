@@ -200,7 +200,9 @@ body {
   z-index: 1;
   right: 25px;
   padding: 14px 32px 12px 24px;
-
+  &.custom_alert_login {
+    top: 30px;
+  }
   @include border-radius(8px);
   &.alert-success {
     background: var(--bs-alert-success);
@@ -239,5 +241,18 @@ body {
     background: url('../../images/close.png') no-repeat;
     top: 15px;
     right: 20px;
+  }
+}
+.error_wrap {
+  input {
+    border-color: var(--bs-red-error);
+    background: url('../../images/valerror.png') no-repeat right 10px center !important;
+  }
+  .error {
+    font-size: 0.75rem;
+    line-height: 17px;
+    color: var(--bs-red-error);
+    text-transform: capitalize;
+    margin-top: 4px;
   }
 }

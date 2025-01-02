@@ -215,6 +215,9 @@ body.user_act_page {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
 }
+.custom_alert.custom_alert_login {
+  top: 30px;
+}
 .custom_alert.alert-success {
   background: var(--bs-alert-success);
   border-left: 8px solid green;
@@ -252,6 +255,18 @@ body.user_act_page {
   background: url("../../images/close.png") no-repeat;
   top: 15px;
   right: 20px;
+}
+
+.error_wrap input {
+  border-color: var(--bs-red-error);
+  background: url("../../images/valerror.png") no-repeat right 10px center !important;
+}
+.error_wrap .error {
+  font-size: 0.75rem;
+  line-height: 17px;
+  color: var(--bs-red-error);
+  text-transform: capitalize;
+  margin-top: 4px;
 }
 
 .button {

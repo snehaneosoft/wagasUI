@@ -36,11 +36,12 @@
                                         <input type="email" class="form-control input_field" id="lastname"
                                             placeholder="Place Holder">
                                     </div>
-                                    <div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12 error_wrap">
                                         <label for="exampleFormControlInput1"
                                             class="form-label custom_form_lbl custom_form_lbl">Password</label>
                                         <input type="email" class="form-control input_field pwd-cls" id="lastname"
                                             placeholder="Place Holder">
+                                        <div class="error font400">Please enter correct password</div>
                                     </div>
                                     <div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
                                         <div class="d-flex justify-content-between">
@@ -78,6 +79,18 @@
             </div>
         </div>
     </section>
+    <div class="alert alert-danger alert-dismissible fade show custom_alert custom_alert_login" role="alert">
+        <div class="d-flex alert_wrap">
+            <div class="img_alert">
+                <img src="./images/error.png" alt="error" class="img-fluid">
+            </div>
+            <div class="alert_lbl d-flex  flex-column">
+                <h5 class="heading font600">Error</h5>
+                <p class="para font400 mb-0">Error occured.</p>
+            </div>
+            <button type="button" class="btn-close p-0" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
 </body>
 
 </html>
