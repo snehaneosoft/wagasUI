@@ -32,7 +32,7 @@ body {
         font-size: 1rem;
         color: var(--bs-black);
         margin-bottom: 5px;
-        color: var(--bs-light-gray3);
+        // color: var(--bs-light-gray3);
         &.abt_txt {
           color: var(--bs-black);
         }
@@ -40,7 +40,12 @@ body {
       &_info {
         font-size: 0.875rem;
         color: var(--bs-black);
-        color: var(--bs-light-gray3);
+        // color: var(--bs-light-gray3);
+      }
+      .profile_txt {
+        font-size: 0.875rem;
+        color: var(--bs-black);
+        line-height: 19px;
       }
       .form-select {
         font-size: 1rem;
@@ -89,6 +94,6 @@ body {
     font-size: 1.1rem;
   }
 }
-.summary_btn{
+.summary_btn {
   padding: 16px 30px;
 }

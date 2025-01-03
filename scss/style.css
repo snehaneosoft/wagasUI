@@ -216,7 +216,19 @@ body.user_act_page {
   -moz-border-radius: 8px;
 }
 .custom_alert.custom_alert_login {
-  top: 30px;
+  top: inherit;
+  bottom: 0px;
+}
+@media (max-width: 576px) {
+  .custom_alert.custom_alert_login {
+    width: calc(100% - 50px);
+  }
+}
+@media (min-width: 768px) {
+  .custom_alert.custom_alert_login {
+    top: 30px;
+    bottom: inherit;
+  }
 }
 .custom_alert.alert-success {
   background: var(--bs-alert-success);
@@ -269,11 +281,11 @@ body.user_act_page {
   margin-top: 4px;
 }
 
-.error_lbl {
+.error_warning {
   gap: 10px;
   font-size: 0.875rem;
   line-height: 17px;
-  color: var(--bs-red-error);
+  color: var(--bs-warning1);
   margin-top: 4px;
 }
 
@@ -538,7 +550,6 @@ body {
   font-size: 1rem;
   color: var(--bs-black);
   margin-bottom: 5px;
-  color: var(--bs-light-gray3);
 }
 .content_wrapper .card .profile_content_subtitle.abt_txt {
   color: var(--bs-black);
@@ -546,7 +557,11 @@ body {
 .content_wrapper .card .profile_content_info {
   font-size: 0.875rem;
   color: var(--bs-black);
-  color: var(--bs-light-gray3);
+}
+.content_wrapper .card .profile_content .profile_txt {
+  font-size: 0.875rem;
+  color: var(--bs-black);
+  line-height: 19px;
 }
 .content_wrapper .card .profile_content .form-select {
   font-size: 1rem;
@@ -821,4 +836,5 @@ header .logo a {
   --bs-light-warning: #fff5d1;
   --bs-blue: #4285f4;
   --bs-light-blue: #ebf2ff;
+  --bs-warning1:#FD7F00;
 }/*# sourceMappingURL=style.css.map */

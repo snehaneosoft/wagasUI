@@ -201,7 +201,15 @@ body {
   right: 25px;
   padding: 14px 32px 12px 24px;
   &.custom_alert_login {
-    top: 30px;
+    top: inherit;
+    bottom: 0px;
+   @include xs-small-screen{
+    width: calc(100% - 50px);
+   }
+    @include medium-screen {
+      top: 30px;
+      bottom: inherit;
+    }
   }
   @include border-radius(8px);
   &.alert-success {
@@ -256,10 +264,10 @@ body {
     margin-top: 4px;
   }
 }
-.error_lbl {
+.error_warning {
   gap: 10px;
   font-size: 0.875rem;
   line-height: 17px;
-  color: var(--bs-red-error);
+  color: var(--bs-warning1);
   margin-top: 4px;
 }
