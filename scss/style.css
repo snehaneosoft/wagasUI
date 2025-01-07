@@ -58,6 +58,7 @@ body.user_act_page {
   font-size: 1.3rem;
   line-height: 39px;
   letter-spacing: 0.3px;
+  color: var(--bs-secondary);
 }
 
 .modal .modal-header {
@@ -289,6 +290,11 @@ body.user_act_page {
   margin-top: 4px;
 }
 
+.hr_divider {
+  border-bottom: 1px solid var(--bs-divider);
+  margin: 37px 0;
+}
+
 .button {
   font-size: 1rem;
   line-height: 16px;
@@ -311,6 +317,37 @@ body.user_act_page {
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
+}
+
+table {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+}
+table thead th {
+  background: var(--bs-th);
+  font-size: 0.875rem;
+  line-height: 19px;
+  font-weight: 500;
+  padding: 16px;
+}
+table thead th:nth-child(1) {
+  border-radius: 10px 0 0 0;
+  -webkit-border-radius: 10px 0 0 0;
+  -moz-border-radius: 10px 0 0 0;
+}
+table thead th:last-child {
+  border-radius: 0 10px 0 0;
+  -webkit-border-radius: 0 10px 0 0;
+  -moz-border-radius: 0 10px 0 0;
+}
+table tbody tr:not(:last-child) {
+  border-bottom: 1px solid var(--bs-purple1);
+}
+table tbody tr td {
+  font-size: 0.8rem;
+  padding: 16px;
 }
 
 .registartion_title_h4 {
@@ -510,6 +547,124 @@ body.user_act_page {
   padding: 28px 28px 70px 28px;
 }
 
+.content_wrapper .card .left_logo_ecosystem {
+  width: 128px;
+  height: 128px;
+}
+.content_wrapper .card .ecosystem_profile .profile_content_subtitle,
+.content_wrapper .card .ecosystem_profile .profile_content_info {
+  color: var(--bs-black);
+}
+.content_wrapper .card .ecosystem_profile .established_profile_content {
+  font-size: 0.875rem;
+  line-height: 19px;
+  font-weight: 500;
+  color: var(--bs-black);
+  margin-bottom: 0;
+}
+.content_wrapper .card .profile_card_ul {
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.content_wrapper .card .profile_card_ul li {
+  font-size: 1rem;
+  line-height: 22px;
+  color: var(--bs-black);
+  padding: 10px;
+  color: var(--bs-black);
+  position: relative;
+  cursor: pointer;
+}
+.content_wrapper .card .profile_card_ul li.active {
+  background: var(--bs-gray-highlight);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  font-weight: 600;
+}
+.content_wrapper .card .profile_card_ul li .li_br_bttm {
+  position: absolute;
+  border: 2px solid var(--bs-secondary);
+  width: 100%;
+  left: 0;
+  bottom: -7px;
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.content_wrapper .card .tab_content .para_heading {
+  font-size: 0.875rem;
+  line-height: 24px;
+  color: var(--bs-black);
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+.content_wrapper .card .tab_content .graph_card {
+  margin-bottom: 32px;
+}
+.content_wrapper .card .tab_content .graph_card .sector_category_card {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1019607843);
+}
+.content_wrapper .card .tab_content .graph_card .sector_category_card_title {
+  padding: 27px 42px;
+  font-size: 1.12rem;
+  line-height: 23px;
+  font-weight: 600;
+}
+.content_wrapper .card .tab_content .graph_card .sector_category_card_body {
+  padding: 20px;
+  border-top: 1px solid var(--bs-gray4);
+}
+.content_wrapper .card .tab_content .tab_content_wrap .title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--bs-black);
+  margin-bottom: 22px;
+}
+.content_wrapper .card .tab_content .tab_content_wrap .investment_wrap {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1019607843);
+  padding: 32px;
+}
+.content_wrapper .card .tab_content .tab_content_wrap .investment_wrap .title {
+  font-size: 1.12rem;
+  line-height: 22px;
+}
+.content_wrapper .card .tab_content .tab_content_wrap .latest_heading {
+  font-size: 1.3rem;
+  line-height: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.content_wrapper .card .tab_content .tab_content_wrap .card_wrap {
+  gap: 12px;
+  border: 1px solid var(--bs-gray-border);
+  padding: 32px 24px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+}
+.content_wrapper .card .tab_content .tab_content_wrap .card_wrap .title,
+.content_wrapper .card .tab_content .tab_content_wrap .card_wrap .link_tag {
+  font-size: 0.875rem;
+  line-height: 19px;
+  font-weight: 600;
+  color: var(--bs-black);
+  margin-bottom: 0;
+}
+.content_wrapper .card .tab_content .tab_content_wrap .card_wrap .link_tag {
+  color: var(--bs-primary);
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 17px;
+}
+.content_wrapper .card .tab_content .tab_content_wrap .card_wrap .date_time_info {
+  color: var(--bs-black);
+  font-size: 0.8rem;
+  line-height: 17px;
+}
+
 body {
   background: var(--bs-disabled);
 }
@@ -540,6 +695,17 @@ body {
 .content_wrapper .card .profile_content {
   width: calc(100% - 136px);
 }
+.content_wrapper .card .profile_content.active_profile_content .profile_content_info,
+.content_wrapper .card .profile_content.active_profile_content .profile_content_title,
+.content_wrapper .card .profile_content.active_profile_content .profile_content_subtitle {
+  color: var(--bs-black) !important;
+}
+.content_wrapper .card .profile_content_support_lbl {
+  margin-bottom: 38px;
+  font-size: 1rem;
+  line-height: 20px;
+  color: var(--bs-black);
+}
 .content_wrapper .card .profile_content_title {
   font-size: 1.3rem;
   margin-bottom: 5px;
@@ -548,15 +714,15 @@ body {
 }
 .content_wrapper .card .profile_content_subtitle {
   font-size: 1rem;
-  color: var(--bs-black);
   margin-bottom: 5px;
+  color: var(--bs-light-gray3);
 }
 .content_wrapper .card .profile_content_subtitle.abt_txt {
   color: var(--bs-black);
 }
 .content_wrapper .card .profile_content_info {
   font-size: 0.875rem;
-  color: var(--bs-black);
+  color: var(--bs-light-gray3);
 }
 .content_wrapper .card .profile_content .profile_txt {
   font-size: 0.875rem;
@@ -836,5 +1002,11 @@ header .logo a {
   --bs-light-warning: #fff5d1;
   --bs-blue: #4285f4;
   --bs-light-blue: #ebf2ff;
-  --bs-warning1:#FD7F00;
+  --bs-warning1: #fd7f00;
+  --bs-gray-highlight: #efeeff;
+  --bs-gray4: #ececec;
+  --bs-th: #d5d3eb;
+  --bs-purple1: #e1cfff;
+  --bs-divider: #e9e9e9;
+  --bs-black:#565656;
 }/*# sourceMappingURL=style.css.map */

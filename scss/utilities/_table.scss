@@ -1,0 +1,30 @@
+table {
+  box-shadow: 0px 2px 10px 0px #0000001a;
+  @include border-radius(8px);
+  thead {
+    th {
+      background: var(--bs-th);
+      font-size: 0.875rem;
+      line-height: 19px;
+      font-weight: 500;
+      padding: 16px;
+      &:nth-child(1) {
+        @include border-radius(10px 0 0 0);
+      }
+      &:last-child {
+        @include border-radius(0 10px 0 0);
+      }
+    }
+  }
+  tbody {
+    tr {
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--bs-purple1);
+      }
+      td {
+        font-size: 0.8rem;
+        padding: 16px;
+      }
+    }
+  }
+}
