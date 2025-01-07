@@ -1,5 +1,13 @@
 .content_wrapper {
   .card {
+    .profile_content {
+      .prev {
+        transform: rotate(180deg);
+      }
+      .profile_br {
+        border-bottom: 1px solid var(--bs-gray-border);
+      }
+    }
     .left_logo_ecosystem {
       width: 128px;
       height: 128px;
@@ -22,9 +30,9 @@
       display: flex;
       list-style: none;
       gap: 20px;
-      border-bottom: 1px solid var(--bs-gray-border);
+
       padding-bottom: 5px;
-      width: fit-content;
+
       li {
         // font-size: 1rem;
         // line-height: 22px;
