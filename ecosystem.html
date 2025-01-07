@@ -265,171 +265,641 @@
 
                     <div class="card">
                         <div class="profile_content w-100">
-                            <ul class="profile_card_ul">
-                                <li class="active">Overview</li>
-                                <li>Initiatives</li>
-                                <li>Partnerships</li>
-                                <li>Policies</li>
-                                <li>Projects</li>
-                                <li>Funding</li>
-                                <li>Investments</li>
-                                <li>News</li>
-                                <li>Team</li>
+                            <ul class="nav nav-pills mb-3 profile_card_ul" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link border-0 active" id="pills-overview-tab"
+                                        data-bs-toggle="pill" data-bs-target="#overview" type="button" role="tab"
+                                        aria-controls="pills-overview" aria-selected="true">Overview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link  border-0" id="pills-initiatives-tab" data-bs-toggle="pill"
+                                        data-bs-target="#initiatives" type="button" role="tab"
+                                        aria-controls="pills-initiatives" aria-selected="true">Initiatives</button>
+
+                                </li>
+                                <li class="nav-item active" role="presentation">
+                                    <button class="nav-link  border-0" id="pills-paternerships-tab"
+                                        data-bs-toggle="pill" data-bs-target="#paternerships" type="button" role="tab"
+                                        aria-controls="pills-paternerships" aria-selected="true">Partnerships</button>
+
+                                </li>
+                                <li>
+                                    <button class="nav-link  border-0" id="pills-policies-tab" data-bs-toggle="pill"
+                                        data-bs-target="#policies" type="button" role="tab"
+                                        aria-controls="pills-policies" aria-selected="true">Policies</button>
+                                </li>
+                                <li>
+                                    <button class="nav-link  border-0" id="pills-projects-tab" data-bs-toggle="pill"
+                                        data-bs-target="#projects" type="button" role="tab"
+                                        aria-controls="pills-projects" aria-selected="true">Projects</button>
+                                </li>
+                                <li>
+                                    <button class="nav-link  border-0" id="pills-funding-tab" data-bs-toggle="pill"
+                                        data-bs-target="#funding" type="button" role="tab" aria-controls="pills-funding"
+                                        aria-selected="true">Funding</button>
+                                </li>
+                                <li>
+                                    <button class="nav-link  border-0" id="pills-investments-tab" data-bs-toggle="pill"
+                                        data-bs-target="#investments" type="button" role="tab"
+                                        aria-controls="pills-investments" aria-selected="true">Investments</button>
+                                </li>
+                                <li>
+                                    <button class="nav-link  border-0" id="pills-news-tab" data-bs-toggle="pill"
+                                        data-bs-target="#news" type="button" role="tab" aria-controls="pills-news"
+                                        aria-selected="true">News</button>
+                                </li>
+                                <li>
+                                    <button class="nav-link  border-0" id="pills-team-tab" data-bs-toggle="pill"
+                                        data-bs-target="#team" type="button" role="tab" aria-controls="pills-team"
+                                        aria-selected="true">Team</button>
+                                </li>
                             </ul>
-                            <div class="tab_content" id="overview">
-                                <div>
-                                    <p class="para_heading">The Government of Singapore is known for its efficient,
-                                        pragmatic, and
-                                        forward-looking governance. It plays a crucial role in the country's rapid
-                                        economic
-                                        development and high standards of living. The government focuses on policies
-                                        that
-                                        promote innovation, sustainability, and social cohesion, making Singapore one of
-                                        the
-                                        most competitive economies in the world.
-                                    </p>
-                                    <div class="graph_card">
-                                        <div class="row h-4">
-                                            <div class="col-xl-5 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                <div class="sector_category_card">
-                                                    <h4 class="sector_category_card_title">Major Initiatives by Sector
-                                                    </h4>
-                                                    <div class="sector_category_card_body">
+                            <div class="tab-content" id="pills-tabContent">
 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-7 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                <div class="sector_category_card">
-                                                    <h4 class="sector_category_card_title">Government Expenditure by
-                                                        Category</h4>
-                                                    <div class="sector_category_card_body">
-                                                        <img src="./images/grap2.png" alt="graph" class="img-fluid">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="hr_divider">
-                                <div class="tab_content_wrap">
-                                    <h5 class="title">Funding & Investments</h5>
-                                    <p class="para_heading">The Government of Singapore is known for its efficient,
-                                        pragmatic, and
-                                        forward-looking governance. It plays a crucial role in the country's rapid
-                                        economic
-                                        development and high standards of living. The government focuses on policies
-                                        that
-                                        promote innovation, sustainability, and social cohesion, making Singapore one of
-                                        the
-                                        most competitive economies in the world.
-                                    </p>
-                                    <div class="graph_card">
-                                        <div class="row h-4">
-                                            <div class="col-xl-5 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                <div class="sector_category_card">
-                                                    <h4 class="sector_category_card_title">Funding by Sector
-                                                    </h4>
-                                                    <div class="sector_category_card_body">
+                                <div class="tab_content tab-pane fade show active" id="overview" role="tabpanel"
+                                    aria-labelledby="nav-home-tab">
+                                    <div>
+                                        <p class="para_heading">The Government of Singapore is known for its efficient,
+                                            pragmatic, and
+                                            forward-looking governance. It plays a crucial role in the country's rapid
+                                            economic
+                                            development and high standards of living. The government focuses on policies
+                                            that
+                                            promote innovation, sustainability, and social cohesion, making Singapore
+                                            one of
+                                            the
+                                            most competitive economies in the world.
+                                        </p>
+                                        <div class="graph_card">
+                                            <div class="row h-4">
+                                                <div class="col-xl-5 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                    <div class="sector_category_card">
+                                                        <h4 class="sector_category_card_title">Major Initiatives by
+                                                            Sector
+                                                        </h4>
+                                                        <div class="sector_category_card_body">
 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-7 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                    <div class="sector_category_card">
+                                                        <h4 class="sector_category_card_title">Government Expenditure by
+                                                            Category</h4>
+                                                        <div class="sector_category_card_body">
+                                                            <img src="./images/grap2.png" alt="graph" class="img-fluid">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-7 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                <div class="sector_category_card">
-                                                    <h4 class="sector_category_card_title">Investment Rounds Over Time
-                                                    </h4>
-                                                    <div class="sector_category_card_body">
-                                                        <img src="./images/grap2.png" alt="graph" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <hr class="hr_divider">
+                                    <div class="tab_content_wrap">
+                                        <h5 class="title">Funding & Investments</h5>
+                                        <p class="para_heading">The Government of Singapore is known for its efficient,
+                                            pragmatic, and
+                                            forward-looking governance. It plays a crucial role in the country's rapid
+                                            economic
+                                            development and high standards of living. The government focuses on policies
+                                            that
+                                            promote innovation, sustainability, and social cohesion, making Singapore
+                                            one of
+                                            the
+                                            most competitive economies in the world.
+                                        </p>
+                                        <div class="graph_card">
+                                            <div class="row h-4">
+                                                <div class="col-xl-5 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                    <div class="sector_category_card">
+                                                        <h4 class="sector_category_card_title">Funding by Sector
+                                                        </h4>
+                                                        <div class="sector_category_card_body">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-7 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                    <div class="sector_category_card">
+                                                        <h4 class="sector_category_card_title">Investment Rounds Over
+                                                            Time
+                                                        </h4>
+                                                        <div class="sector_category_card_body">
+                                                            <img src="./images/grap2.png" alt="graph" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content_wrap">
+                                        <div class="investment_wrap">
+                                            <h5 class="title">Major Investment Projects</h5>
+                                            <div class="table-responsive">
+                                                <table class="w-100">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Project Name</th>
+                                                            <th>Sector</th>
+                                                            <th>Investment Amount</th>
+                                                            <th>Start date</th>
+                                                            <th>End date</th>
+                                                            <th>status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Smart Nation Initiative</td>
+                                                            <td>Technology</td>
+                                                            <td>$10B SGD</td>
+                                                            <td>2018</td>
+                                                            <td>Ongoing</td>
+                                                            <td>In Progress</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Smart Nation Initiative</td>
+                                                            <td>Technology</td>
+                                                            <td>$10B SGD</td>
+                                                            <td>2018</td>
+                                                            <td>Ongoing</td>
+                                                            <td>In Progress</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Smart Nation Initiative</td>
+                                                            <td>Technology</td>
+                                                            <td>$10B SGD</td>
+                                                            <td>2018</td>
+                                                            <td>Ongoing</td>
+                                                            <td>In Progress</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Smart Nation Initiative</td>
+                                                            <td>Technology</td>
+                                                            <td>$10B SGD</td>
+                                                            <td>2018</td>
+                                                            <td>Ongoing</td>
+                                                            <td>In Progress</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="hr_divider">
+                                    <div class="tab_content_wrap">
+                                        <h5 class="latest_heading">Latest news</h5>
+                                        <div class="latest">
+                                            <div class="row g-xl-5 g-5 g-md-2">
+                                                <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                                    <div class="card_wrap d-flex flex-column">
+                                                        <h5 class="title m-0">Singapore launches new green plan to
+                                                            tackle
+                                                            climate
+                                                            change</h5>
+                                                        <a class="link_tag">www.straitstimes.com</a>
+                                                        <div class="date_time_info">Aug 15, 2023</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                                    <div class="card_wrap d-flex flex-column">
+                                                        <h5 class="title  m-0">Singapore launches new green plan to
+                                                            tackle
+                                                            climate
+                                                            change</h5>
+                                                        <a class="link_tag">www.straitstimes.com</a>
+                                                        <div class="date_time_info">Aug 15, 2023</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                                    <div class="card_wrap d-flex flex-column">
+                                                        <h5 class="title m-0">Singapore launches new green plan to
+                                                            tackle
+                                                            climate
+                                                            change</h5>
+                                                        <a class="link_tag">www.straitstimes.com</a>
+                                                        <div class="date_time_info">Aug 15, 2023</div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab_content_wrap">
-                                    <div class="investment_wrap">
-                                        <h5 class="title">Major Investment Projects</h5>
-                                        <div class="table-responsive">
-                                            <table class="w-100">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Project Name</th>
-                                                        <th>Sector</th>
-                                                        <th>Investment Amount</th>
-                                                        <th>Start date</th>
-                                                        <th>End date</th>
-                                                        <th>status</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Smart Nation Initiative</td>
-                                                        <td>Technology</td>
-                                                        <td>$10B SGD</td>
-                                                        <td>2018</td>
-                                                        <td>Ongoing</td>
-                                                        <td>In Progress</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Smart Nation Initiative</td>
-                                                        <td>Technology</td>
-                                                        <td>$10B SGD</td>
-                                                        <td>2018</td>
-                                                        <td>Ongoing</td>
-                                                        <td>In Progress</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Smart Nation Initiative</td>
-                                                        <td>Technology</td>
-                                                        <td>$10B SGD</td>
-                                                        <td>2018</td>
-                                                        <td>Ongoing</td>
-                                                        <td>In Progress</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Smart Nation Initiative</td>
-                                                        <td>Technology</td>
-                                                        <td>$10B SGD</td>
-                                                        <td>2018</td>
-                                                        <td>Ongoing</td>
-                                                        <td>In Progress</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                <div class="tab_content tab-pane fade" id="initiatives" role="tabpanel"
+                                    aria-labelledby="nav-initiatives-tab">
+                                    <div class="tab_content_wrap initiatives_wrap">
+                                        <h5 class="title">Government of Singapore Initiatives</h5>
+                                        <div class="investment_wrap">
+                                            <div class="row">
+                                                <div class="col-xl-5 col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-12">
+                                                    <div class="investment_container">
+                                                        <h5 class="title">Smart Nation Initiative</h5>
+                                                        <p class="para">The Smart Nation initiative aims to harness
+                                                            technology to improve
+                                                            the lives of citizens, create more opportunities, and build
+                                                            stronger communities. This initiative focuses on areas such
+                                                            as
+                                                            digital government services, smart urban infrastructure, and
+                                                            enhancing cybersecurity.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-7 col-xxl-7 col-lg-7 col-md-7 col-sm-7 col-12">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners focus h-100">
+                                                                <h5 class="title">Focus Areas</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li>Digital Government Services</li>
+                                                                    <li>Smart Urban Infrastructure</li>
+                                                                    <li>Cybersecurity Enhancements</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners green h-100">
+                                                                <h5 class="title">Key Partners</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li>GovTech Singapore</li>
+                                                                    <li>National Research Foundation (NRF)</li>
+                                                                    <li>Economic Development Board (EDB)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="investment_wrap">
+                                            <div class="row">
+                                                <div class="col-xl-5 col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-12">
+                                                    <div class="investment_container">
+                                                        <h5 class="title">Green Plan 2030</h5>
+                                                        <p class="para">The Singapore Green Plan 2030 is a
+                                                            whole-of-nation
+                                                            movement to advance Singapore’s national agenda on
+                                                            sustainable
+                                                            development. It charts ambitious and concrete targets over
+                                                            the
+                                                            next 10 years, strengthening Singapore’s commitments under
+                                                            the
+                                                            UN's 2030 Sustainable Development Agenda and Paris
+                                                            Agreement.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-7 col-xxl-7 col-lg-7 col-md-7 col-sm-7 col-12">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners focus h-100">
+                                                                <h5 class="title">Focus Areas</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li>Carbon Emissions Reduction</li>
+                                                                    <li>Green Energy Transition</li>
+                                                                    <li>Waste Minimization</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners green h-100">
+                                                                <h5 class="title">Key Partners</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li> Ministry of Sustainability and the Environment
+                                                                        (MSE)</li>
+                                                                    <li>
+                                                                        Energy Market Authority (EMA)</li>
+                                                                    <li>National Environment Agency (NEA)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="investment_wrap">
+                                            <div class="row">
+                                                <div class="col-xl-5 col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-12">
+                                                    <div class="investment_container">
+                                                        <h5 class="title">SkillsFuture</h5>
+                                                        <p class="para">SkillsFuture is a national movement to provide
+                                                            Singaporeans with the opportunities to develop their fullest
+                                                            potential throughout life, regardless of their starting
+                                                            point.
+                                                            The initiative empowers individuals to take ownership of
+                                                            their
+                                                            skills development and lifelong learning..
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-7 col-xxl-7 col-lg-7 col-md-7 col-sm-7 col-12">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners focus h-100">
+                                                                <h5 class="title">Focus Areas</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li>Carbon Emissions Reduction</li>
+                                                                    <li>Green Energy Transition</li>
+                                                                    <li>Waste Minimization</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners green h-100">
+                                                                <h5 class="title">Key Partners</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li> Ministry of Sustainability and the Environment
+                                                                        (MSE)</li>
+                                                                    <li>
+                                                                        Energy Market Authority (EMA)</li>
+                                                                    <li>National Environment Agency (NEA)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <hr class="hr_divider">
-                                <div class="tab_content_wrap">
-                                    <h5 class="latest_heading">Latest news</h5>
-                                    <div class="latest">
-                                        <div class="row g-xl-5 g-5 g-md-2">
-                                            <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                                <div class="card_wrap d-flex flex-column">
-                                                    <h5 class="title">Singapore launches new green plan to tackle
-                                                        climate
-                                                        change</h5>
-                                                    <a class="link_tag">www.straitstimes.com</a>
-                                                    <div class="date_time_info">Aug 15, 2023</div>
+                                <div class="tab_content tab-pane fade" id="paternerships" role="tabpanel"
+                                    aria-labelledby="nav-paternerships-tab">
+                                    <div class="tab_content_wrap initiatives_wrap">
+                                        <h5 class="title">Government of Singapore Partnerships</h5>
+                                        <div class="investment_wrap">
+                                            <div class="row">
+                                                <div class="col-xl-5 col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-12">
+                                                    <div class="investment_container">
+                                                        <h5 class="title">Economic Development Partnership</h5>
+                                                        <p class="para">The Smart Nation initiative aims to harness
+                                                            technology to improve
+                                                            the lives of citizens, create more opportunities, and build
+                                                            stronger communities. This initiative focuses on areas such
+                                                            as
+                                                            digital government services, smart urban infrastructure, and
+                                                            enhancing cybersecurity.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-7 col-xxl-7 col-lg-7 col-md-7 col-sm-7 col-12">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners focus h-100">
+                                                                <h5 class="title">Focus Areas</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li>Digital Government Services</li>
+                                                                    <li>Smart Urban Infrastructure</li>
+                                                                    <li>Cybersecurity Enhancements</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners green h-100">
+                                                                <h5 class="title">Key Partners</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li>GovTech Singapore</li>
+                                                                    <li>National Research Foundation (NRF)</li>
+                                                                    <li>Economic Development Board (EDB)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                                <div class="card_wrap d-flex flex-column">
-                                                    <h5 class="title">Singapore launches new green plan to tackle
-                                                        climate
-                                                        change</h5>
-                                                    <a class="link_tag">www.straitstimes.com</a>
-                                                    <div class="date_time_info">Aug 15, 2023</div>
+                                        </div>
+                                        <div class="investment_wrap">
+                                            <div class="row">
+                                                <div class="col-xl-5 col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-12">
+                                                    <div class="investment_container">
+                                                        <h5 class="title">Public-Private Partnership (PPP) for
+                                                            Infrastructure</h5>
+                                                        <p class="para">The Singapore Green Plan 2030 is a
+                                                            whole-of-nation
+                                                            movement to advance Singapore’s national agenda on
+                                                            sustainable
+                                                            development. It charts ambitious and concrete targets over
+                                                            the
+                                                            next 10 years, strengthening Singapore’s commitments under
+                                                            the
+                                                            UN's 2030 Sustainable Development Agenda and Paris
+                                                            Agreement.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-7 col-xxl-7 col-lg-7 col-md-7 col-sm-7 col-12">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners focus h-100">
+                                                                <h5 class="title">Focus Areas</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li>Carbon Emissions Reduction</li>
+                                                                    <li>Green Energy Transition</li>
+                                                                    <li>Waste Minimization</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners green h-100">
+                                                                <h5 class="title">Key Partners</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li> Ministry of Sustainability and the Environment
+                                                                        (MSE)</li>
+                                                                    <li>
+                                                                        Energy Market Authority (EMA)</li>
+                                                                    <li>National Environment Agency (NEA)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                                <div class="card_wrap d-flex flex-column">
-                                                    <h5 class="title">Singapore launches new green plan to tackle
-                                                        climate
-                                                        change</h5>
-                                                    <a class="link_tag">www.straitstimes.com</a>
-                                                    <div class="date_time_info">Aug 15, 2023</div>
+                                        </div>
+                                        <div class="investment_wrap">
+                                            <div class="row">
+                                                <div class="col-xl-5 col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-12">
+                                                    <div class="investment_container">
+                                                        <h5 class="title">International Collaboration on Climate Action
+                                                        </h5>
+                                                        <p class="para">SkillsFuture is a national movement to provide
+                                                            Singaporeans with the opportunities to develop their fullest
+                                                            potential throughout life, regardless of their starting
+                                                            point.
+                                                            The initiative empowers individuals to take ownership of
+                                                            their
+                                                            skills development and lifelong learning..
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-7 col-xxl-7 col-lg-7 col-md-7 col-sm-7 col-12">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners focus h-100">
+                                                                <h5 class="title">Focus Areas</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li>Carbon Emissions Reduction</li>
+                                                                    <li>Green Energy Transition</li>
+                                                                    <li>Waste Minimization</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners green h-100">
+                                                                <h5 class="title">Key Partners</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li> Ministry of Sustainability and the Environment
+                                                                        (MSE)</li>
+                                                                    <li>
+                                                                        Energy Market Authority (EMA)</li>
+                                                                    <li>National Environment Agency (NEA)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab_content tab-pane fade" id="policies" role="tabpanel"
+                                    aria-labelledby="nav-policies-tab">
+                                    <div class="tab_content_wrap initiatives_wrap">
+                                        <h5 class="title">Government of Singapore Policies</h5>
+                                        <div class="investment_wrap">
+                                            <div class="row">
+                                                <div class="col-xl-5 col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-12">
+                                                    <div class="investment_container">
+                                                        <h5 class="title">Sustainability and Green Economy</h5>
+                                                        <p class="para">The Government of Singapore is committed to
+                                                            driving sustainable development and transitioning to a green
+                                                            economy. This policy encompasses a range of initiatives
+                                                            aimed at reducing carbon emissions, promoting renewable
+                                                            energy, and fostering green innovation across all sectors of
+                                                            the economy.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-7 col-xxl-7 col-lg-7 col-md-7 col-sm-7 col-12">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners focus h-100">
+                                                                <h5 class="title">Focus Areas</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li>Digital Government Services</li>
+                                                                    <li>Smart Urban Infrastructure</li>
+                                                                    <li>Cybersecurity Enhancements</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners green h-100">
+                                                                <h5 class="title">Key Partners</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li>GovTech Singapore</li>
+                                                                    <li>National Research Foundation (NRF)</li>
+                                                                    <li>Economic Development Board (EDB)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="investment_wrap">
+                                            <div class="row">
+                                                <div class="col-xl-5 col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-12">
+                                                    <div class="investment_container">
+                                                        <h5 class="title">Public-Private Partnership (PPP) for
+                                                            Infrastructure</h5>
+                                                        <p class="para">This partnership focuses on developing and
+                                                            managing public infrastructure projects through
+                                                            collaboration with private sector entities. The goal is to
+                                                            leverage private sector expertise and resources to deliver
+                                                            efficient and sustainable public services.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-7 col-xxl-7 col-lg-7 col-md-7 col-sm-7 col-12">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners focus h-100">
+                                                                <h5 class="title">Focus Areas</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li>Carbon Emissions Reduction</li>
+                                                                    <li>Green Energy Transition</li>
+                                                                    <li>Waste Minimization</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners green h-100">
+                                                                <h5 class="title">Key Partners</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li> Ministry of Sustainability and the Environment
+                                                                        (MSE)</li>
+                                                                    <li>
+                                                                        Energy Market Authority (EMA)</li>
+                                                                    <li>National Environment Agency (NEA)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="investment_wrap">
+                                            <div class="row">
+                                                <div class="col-xl-5 col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-12">
+                                                    <div class="investment_container">
+                                                        <h5 class="title">International Collaboration on Climate Action
+                                                        </h5>
+                                                        <p class="para">SkillsFuture is a national movement to provide
+                                                            Singaporeans with the opportunities to develop their fullest
+                                                            potential throughout life, regardless of their starting
+                                                            point.
+                                                            The initiative empowers individuals to take ownership of
+                                                            their
+                                                            skills development and lifelong learning..
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-7 col-xxl-7 col-lg-7 col-md-7 col-sm-7 col-12">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners focus h-100">
+                                                                <h5 class="title">Focus Areas</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li>Carbon Emissions Reduction</li>
+                                                                    <li>Green Energy Transition</li>
+                                                                    <li>Waste Minimization</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                            <div class="area_partners green h-100">
+                                                                <h5 class="title">Key Partners</h5>
+                                                                <ul class="area_partners_ul ps-0">
+                                                                    <li> Ministry of Sustainability and the Environment
+                                                                        (MSE)</li>
+                                                                    <li>
+                                                                        Energy Market Authority (EMA)</li>
+                                                                    <li>National Environment Agency (NEA)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
