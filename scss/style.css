@@ -567,6 +567,8 @@ table tbody tr td {
   display: flex;
   list-style: none;
   gap: 20px;
+  overflow: hidden;
+  overflow-x: auto;
 }
 .content_wrapper .card .profile_card_ul li {
   font-size: 1rem;
