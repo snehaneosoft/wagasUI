@@ -99,11 +99,75 @@
           color: var(--bs-black);
           margin: 0 0 24px 0;
         }
+        &.team_wrap {
+          .title {
+            margin-bottom: 12px;
+          }
+          .leadership_para {
+            font-size: 1rem;
+            line-height: 24px;
+            color: var(--bs-black);
+          }
+          .leadership_team_member{
+            padding-top: 16px;
+          }
+          .leader_card {
+            background: var(--bs-purple2);
+            box-shadow: 0px 2px 12px 0px #0000001a;
+            padding: 24px 40px;
+            .leader_card_header {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 16px;
+              text-align: center;
+              .leader_name {
+                color: var(--bs-primary);
+                font-size: 1.25rem;
+                line-height: 24px;
+                font-weight: 700;
+              }
+              .leader_info {
+                gap: 12px;
+              }
+              .leader_designation {
+                font-size: 1rem;
+                line-height: 19px;
+                color: var(--bs-black);
+              }
+              .viewprofile_panel{
+                margin-top: 38px;
+                .viewprofile_btn{
+                  line-height: 24px;
+                  padding: 4px 16px;
+                }
+              }
+            }
+          }
+        }
+
         .news_wrap {
           .card {
             padding: 0;
             gap: 0;
             position: relative;
+
+            &:hover {
+              &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                height: 100%;
+                background: #000;
+                opacity: 0.5;
+                width: 100%;
+              }
+              // .card_body {
+              //   height: 100%;
+              //   transform: translateY(-50%);
+              //   z-index: 1;
+              // }
+            }
           }
           .card_body {
             padding: 32px 24px;
@@ -113,17 +177,33 @@
             top: -20px;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
-
+            // transform: translateY(5%);
+            height: 120px;
+            overflow: hidden;
+            transition: 0.5s;
+            z-index: 1;
             .date_info {
               font-size: 1rem;
               line-height: 24px;
               color: var(--bs-black1);
+              margin-bottom: 4px;
             }
             .card_info {
               font-size: 1.25rem;
               line-height: 25px;
               color: var(--bs-primary);
               font-weight: 700;
+              margin-bottom: 16px;
+            }
+            .readmore_panel {
+              margin-top: 40px;
+              .readmore_btn {
+                display: flex;
+                gap: 16px;
+                padding: 4px 20px 4px 20px;
+                line-height: 24px;
+                align-items: center;
+              }
             }
           }
         }

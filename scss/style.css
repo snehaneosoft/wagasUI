@@ -637,10 +637,63 @@ table tbody tr td {
   color: var(--bs-black);
   margin: 0 0 24px 0;
 }
+.content_wrapper .card .tab_content .tab_content_wrap.team_wrap .title {
+  margin-bottom: 12px;
+}
+.content_wrapper .card .tab_content .tab_content_wrap.team_wrap .leadership_para {
+  font-size: 1rem;
+  line-height: 24px;
+  color: var(--bs-black);
+}
+.content_wrapper .card .tab_content .tab_content_wrap.team_wrap .leadership_team_member {
+  padding-top: 16px;
+}
+.content_wrapper .card .tab_content .tab_content_wrap.team_wrap .leader_card {
+  background: var(--bs-purple2);
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1019607843);
+  padding: 24px 40px;
+}
+.content_wrapper .card .tab_content .tab_content_wrap.team_wrap .leader_card .leader_card_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+.content_wrapper .card .tab_content .tab_content_wrap.team_wrap .leader_card .leader_card_header .leader_name {
+  color: var(--bs-primary);
+  font-size: 1.25rem;
+  line-height: 24px;
+  font-weight: 700;
+}
+.content_wrapper .card .tab_content .tab_content_wrap.team_wrap .leader_card .leader_card_header .leader_info {
+  gap: 12px;
+}
+.content_wrapper .card .tab_content .tab_content_wrap.team_wrap .leader_card .leader_card_header .leader_designation {
+  font-size: 1rem;
+  line-height: 19px;
+  color: var(--bs-black);
+}
+.content_wrapper .card .tab_content .tab_content_wrap.team_wrap .leader_card .leader_card_header .viewprofile_panel {
+  margin-top: 38px;
+}
+.content_wrapper .card .tab_content .tab_content_wrap.team_wrap .leader_card .leader_card_header .viewprofile_panel .viewprofile_btn {
+  line-height: 24px;
+  padding: 4px 16px;
+}
 .content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card {
   padding: 0;
   gap: 0;
   position: relative;
+}
+.content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  width: 100%;
 }
 .content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card_body {
   padding: 32px 24px;
@@ -650,17 +703,33 @@ table tbody tr td {
   top: -20px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  height: 120px;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 1;
 }
 .content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card_body .date_info {
   font-size: 1rem;
   line-height: 24px;
   color: var(--bs-black1);
+  margin-bottom: 4px;
 }
 .content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card_body .card_info {
   font-size: 1.25rem;
   line-height: 25px;
   color: var(--bs-primary);
   font-weight: 700;
+  margin-bottom: 16px;
+}
+.content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card_body .readmore_panel {
+  margin-top: 40px;
+}
+.content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card_body .readmore_panel .readmore_btn {
+  display: flex;
+  gap: 16px;
+  padding: 4px 20px 4px 20px;
+  line-height: 24px;
+  align-items: center;
 }
 .content_wrapper .card .tab_content .tab_content_wrap .investment_wrap {
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1019607843);
