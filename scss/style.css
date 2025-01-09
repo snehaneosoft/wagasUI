@@ -685,34 +685,66 @@ table tbody tr td {
   padding: 0;
   gap: 0;
   position: relative;
+  height: 496px;
+  border: none;
 }
-.content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card:hover::after {
+.content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card .card_header .card_img {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+}
+.content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card:hover .card_header {
+  position: relative;
+}
+.content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card:hover .card_header::after {
   content: "";
   position: absolute;
   top: 0;
+  left: 0;
   height: 100%;
   background: #000;
   opacity: 0.5;
   width: 100%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+}
+.content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card:hover .card_desc,
+.content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card:hover .readmore_panel {
+  opacity: 1;
+  display: block;
+}
+.content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card:hover .card_body {
+  bottom: 47px;
 }
 .content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card_body {
   padding: 32px 24px;
-  position: relative;
+  position: absolute;
   background: #fff;
   width: 100%;
-  top: -20px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  height: 120px;
-  overflow: hidden;
-  transition: 0.5s;
+  bottom: 43px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  overflow-y: auto;
   z-index: 1;
+  transition: all 0.5s;
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1019607843);
+  transition: bottom 0.2s ease-in-out;
 }
 .content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card_body .date_info {
   font-size: 1rem;
   line-height: 24px;
   color: var(--bs-black1);
   margin-bottom: 4px;
+}
+.content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card_body .card_desc {
+  line-height: 20px;
+}
+.content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card_body .card_desc,
+.content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card_body .readmore_panel {
+  opacity: 0;
+  display: none;
 }
 .content_wrapper .card .tab_content .tab_content_wrap .news_wrap .card_body .card_info {
   font-size: 1.25rem;
