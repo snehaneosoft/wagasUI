@@ -7,13 +7,26 @@ header {
   top: 0;
   z-index: 2;
   border-bottom: 1px solid var(--bs-secondary);
-  @include medium-screen {
+  @include large-screen {
     .menu {
+      position: relative !important;
+      bottom: 0;
+      width: 100%;
+      background: transparent;
+      left: 0;
       ul {
         list-style: none;
         margin-bottom: 0;
+        gap: 0 !important;
+        
         li {
           padding: 10px 12px;
+          .xs_res_menu_item {
+            display: none !important;
+          }
+          .lang_drp{
+            display: block !important;
+          }
           .menu_span {
             padding: 12px 10px;
             gap: 16px;
@@ -115,6 +128,27 @@ header {
       font-size: 1.3rem;
       line-height: 29px;
       color: var(--bs-secondary);
+    }
+  }
+  .menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--bs-purple);
+    left: 0;
+    ul {
+      gap: 34px;
+      justify-content: center;
+      list-style: none;
+      margin-bottom: 0;
+      li {
+        .xs_res_menu_item {
+          display: flex;
+        }
+        .lang_drp{
+          display: none;
+        }
+      }
     }
   }
 }

@@ -1021,13 +1021,27 @@ header {
   z-index: 2;
   border-bottom: 1px solid var(--bs-secondary);
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+  header .menu {
+    position: relative !important;
+    bottom: 0;
+    width: 100%;
+    background: transparent;
+    left: 0;
+  }
   header .menu ul {
     list-style: none;
     margin-bottom: 0;
+    gap: 0 !important;
   }
   header .menu ul li {
     padding: 10px 12px;
+  }
+  header .menu ul li .xs_res_menu_item {
+    display: none !important;
+  }
+  header .menu ul li .lang_drp {
+    display: block !important;
   }
   header .menu ul li .menu_span {
     padding: 12px 10px;
@@ -1122,6 +1136,25 @@ header .logo a {
   font-size: 1.3rem;
   line-height: 29px;
   color: var(--bs-secondary);
+}
+header .menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: var(--bs-purple);
+  left: 0;
+}
+header .menu ul {
+  gap: 34px;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 0;
+}
+header .menu ul li .xs_res_menu_item {
+  display: flex;
+}
+header .menu ul li .lang_drp {
+  display: none;
 }
 
 @media (min-width: 768px) {
